@@ -1,0 +1,85 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: report.aux
+The style file: IEEEtran.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: reportReferences.bib
+You're missing a field part---line 8 of file reportReferences.bib
+ :    year = 
+ :           ,
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in modin
+Warning--empty author in wikipediaHarmTab
+Warning--empty title in wikipediaHarmTab
+Warning--empty journal in wikipediaHarmTab
+Warning--empty year in wikipediaHarmTab
+Warning--empty author in jrhexitunes
+Warning--empty title in jrhexitunes
+Warning--empty journal in jrhexitunes
+Warning--empty year in jrhexitunes
+Warning--empty author in amidiomanual
+Warning--empty title in amidiomanual
+Warning--empty journal in amidiomanual
+Warning--empty year in amidiomanual
+Warning--empty author in tonepaditunes
+Warning--empty title in tonepaditunes
+Warning--empty journal in tonepaditunes
+Warning--empty year in tonepaditunes
+Warning--empty author in tenorionwiki
+Warning--empty title in tenorionwiki
+Warning--empty journal in tenorionwiki
+Warning--empty year in tenorionwiki
+Warning--empty author in tenorionyamaha
+Warning--empty title in tenorionyamaha
+Warning--empty journal in tenorionyamaha
+Warning--empty year in tenorionyamaha
+Warning--empty author in cthru
+Warning--empty title in cthru
+Warning--empty journal in cthru
+Warning--empty year in cthru
+
+Done.
+You've used 8 entries,
+            4039 wiz_defined-function locations,
+            830 strings with 7873 characters,
+and the built_in function-call counts, 2033 in all, are:
+= -- 92
+> -- 11
+< -- 0
++ -- 9
+- -- 1
+* -- 161
+:= -- 361
+add.period$ -- 9
+call.type$ -- 8
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 198
+empty$ -- 207
+format.name$ -- 1
+if$ -- 367
+int.to.chr$ -- 0
+int.to.str$ -- 8
+missing$ -- 33
+newline$ -- 63
+num.names$ -- 1
+pop$ -- 140
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 132
+stack$ -- 0
+substring$ -- 1
+swap$ -- 56
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 8
+warning$ -- 29
+while$ -- 1
+width$ -- 9
+write$ -- 81
+(There was 1 error message)
