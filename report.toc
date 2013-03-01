@@ -9,28 +9,28 @@
 \contentsline {subsection}{\numberline {2.2}Systems Research Evaluation}{6}
 \contentsline {subsection}{\numberline {2.3}Market Research}{6}
 \contentsline {subsection}{\numberline {2.4}Music Research}{7}
-\contentsline {subsection}{\numberline {2.5}Technical Research}{8}
-\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{8}
-\contentsline {subsubsection}{\numberline {2.5.2}Working with Hexagons}{8}
-\contentsline {section}{\numberline {3}Requirements Specification}{8}
-\contentsline {subsection}{\numberline {3.1}Functional Requirements}{8}
-\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{8}
-\contentsline {part}{II\hspace {1em}Design}{8}
-\contentsline {section}{\numberline {4}Software Design}{8}
-\contentsline {subsection}{\numberline {4.1}Code Plan}{8}
-\contentsline {subsection}{\numberline {4.2}Key Classes and Methods}{8}
-\contentsline {subsection}{\numberline {4.3}Keeping Time}{8}
-\contentsline {section}{\numberline {5}User Interface Designs}{8}
-\contentsline {part}{III\hspace {1em}Implementation}{8}
-\contentsline {section}{\numberline {6}Implementation of Data Structures and Methods}{8}
-\contentsline {subsection}{\numberline {6.1}Timers}{8}
-\contentsline {subsection}{\numberline {6.2}Hexagon Cells}{8}
-\contentsline {subsection}{\numberline {6.3}Images}{8}
-\contentsline {section}{\numberline {7}Testing}{8}
+\contentsline {subsection}{\numberline {2.5}Technical Research}{9}
+\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{9}
+\contentsline {subsubsection}{\numberline {2.5.2}Working with Hexagons}{9}
+\contentsline {section}{\numberline {3}Requirements Specification}{9}
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{9}
+\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{9}
+\contentsline {part}{II\hspace {1em}Design}{9}
+\contentsline {section}{\numberline {4}Software Design}{9}
+\contentsline {subsection}{\numberline {4.1}Code Plan}{9}
+\contentsline {subsection}{\numberline {4.2}Key Classes and Methods}{9}
+\contentsline {subsection}{\numberline {4.3}Keeping Time}{9}
+\contentsline {section}{\numberline {5}User Interface Designs}{9}
+\contentsline {part}{III\hspace {1em}Implementation}{9}
+\contentsline {section}{\numberline {6}Implementation of Data Structures and Methods}{9}
+\contentsline {subsection}{\numberline {6.1}Timers}{9}
+\contentsline {subsection}{\numberline {6.2}Hexagon Cells}{9}
+\contentsline {subsection}{\numberline {6.3}Images}{9}
+\contentsline {section}{\numberline {7}Testing}{9}
 \contentsline {part}{IV\hspace {1em}Project Meta-Comment}{9}
-\contentsline {section}{\numberline {8}Updates since Interim Report}{9}
-\contentsline {section}{\numberline {9}Time and Planning}{9}
-\contentsline {section}{\numberline {10}Problems Encountered}{9}
-\contentsline {part}{V\hspace {1em}Conclusion}{9}
-\contentsline {part}{VI\hspace {1em}Appendices}{9}
-\contentsline {section}{\numberline {11}References}{9}
+\contentsline {section}{\numberline {8}Updates since Interim Report}{10}
+\contentsline {section}{\numberline {9}Time and Planning}{10}
+\contentsline {section}{\numberline {10}Problems Encountered}{10}
+\contentsline {part}{V\hspace {1em}Conclusion}{10}
+\contentsline {part}{VI\hspace {1em}Appendices}{10}
+\contentsline {section}{\numberline {11}References}{10}
