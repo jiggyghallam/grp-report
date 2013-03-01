@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {6.2}Hexagon Cells}{8}
 \contentsline {subsection}{\numberline {6.3}Images}{8}
 \contentsline {section}{\numberline {7}Testing}{8}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{8}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{9}
 \contentsline {section}{\numberline {8}Updates since Interim Report}{9}
 \contentsline {section}{\numberline {9}Time and Planning}{9}
 \contentsline {section}{\numberline {10}Problems Encountered}{9}
