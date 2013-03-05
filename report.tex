@@ -56,14 +56,14 @@ Our software is designed with a PC and touch screen in mind, as the tactile natu
 \begin{center}
 \includegraphics[scale=0.35]{2.jpg}
 \end{center}
-The JR Hexatone Pro is an application developed by Amidio for iOS that implements the harmonic table\cite{jrhexitunes}.  In a similar manner to the ReacTogon, tiles or `cell commands’ are placed on a circular grid of hexagons and control the nature of the sound produced. It’s unique selling point is derived from the fact that it uses `artificial intelligence and advanced randomisation algorithms’ to randomly alter the sound as the loop progresses to create a constantly changing sound. In addition to this, in place of a `start’ tile, sound is propagated from six `oscillator’ tiles at the centre of the grid and the playhead moves to one of three adjacent tiles. \cite{amidiomanual}
+The JR Hexatone Pro is an application developed by Amidio for iOS that implements the harmonic table\cite{jrhexitunes}.  In a similar manner to the ReacTogon, tiles or 'cell commands’ are placed on a circular grid of hexagons and control the nature of the sound produced. It’s unique selling point is derived from the fact that it uses `artificial intelligence and advanced randomisation algorithms' to randomly alter the sound as the loop progresses to create a constantly changing sound. In addition to this, in place of a `start’ tile, sound is propagated from six 'oscillator' tiles at the centre of the grid and the playhead moves to one of three adjacent tiles. \cite{amidiomanual}
 
 \item \textbf{TonePad / TonePad Pro}\\
 The TonePad is another application for the iOS platform, developed by LoftLab.\cite{tonepaditunes} \\
 \\
 While it does not implement the harmonic table, it is based on a 16x16 matrix of notes in a pentatonic scale. To this end, it has a similar musical effect to notes played on a harmonic table. While the TonePad is simply controlled by selecting notes on the grid and has no placeable operation tiles, the ideas of playhead propagation and chain reactions are exemplified in this application. The playhead moves left to right across the grid and when a selected cell in the grid is encountered, it triggers others within a certain radius. \\
 \\
-A key feature of the TonePad application is it’s ability to import and export songs. Tracks can be exported as ringtones on iPhones or to m4r files. It is also possible to export song ‘code’ for sharing with others; this is integrated into the app with an ‘upload’ button. 
+A key feature of the TonePad application is it's ability to import and export songs. Tracks can be exported as ringtones on iPhones or to m4r files. It is also possible to export song `code' for sharing with others; this is integrated into the app with an 'upload' button. 
 \end{enumerate}
 
 \subsubsection{Examples of Existing Hardware Systems}
@@ -74,7 +74,7 @@ A key feature of the TonePad application is it’s ability to import and export 
 \end{center}
 Developed in 2005 by Japanese artist Toshio Iwai and Yu Nishibori at Yamaha\cite{tenorionwiki}, the Tenori-On is a hand-held music sequencer. Fundamentally, it is conceptually similar to the TonePad, but in hardware form and with a variety of different modes. The hardware itself consists of a 16 x 16 matrix of pressable buttons which light when activated. These buttons can act in a similar manner to the cells in the TonePad in the main sequencing mode, where highlighted cells are played when the playhead encounters them.\\
 \\
-In addition to this, five other modes exist such as `push mode’, which produces a continuous sound when a cell is pressed; `bounce mode’ which causes a the playhead to oscillate between the selected cell and the edge of the matrix, producing sound when `bouncing’ off the side and `grouping’ which is used to sequence patterns together.\\
+In addition to this, five other modes exist such as 'push mode', which produces a continuous sound when a cell is pressed; 'bounce mode' which causes a the playhead to oscillate between the selected cell and the edge of the matrix, producing sound when 'bouncing' off the side and 'grouping' which is used to sequence patterns together.\\
 \\
 Each loop is composed within a layer and each layer can be thought of as `performance parts' of which there can be a total of sixteen. Different notes and instruments can be assigned to each layer and all layers can be played together in synchronisation. Each set of sixteen layers is called a block; a total of sixteen blocks can be stored and dynamically switched between in performance. In this way, musical loops and motifs can be generated and played sequentially to create a complete piece of music\cite{tenorionyamaha}.
 
@@ -83,7 +83,7 @@ The AXiS-64 is possibly the most prevalent MIDI controller and piece of hardware
 \begin{center}
 \includegraphics[scale=0.5]{4.jpg}
 \end{center}
-The fourth revision of the AXiS-64 firmware introduced three different keyboard modes; `single’, `split’ and `layer’.  In ‘split’ mode the keyboard is split into three 64 note keyboards; in layer it becomes one keyboard sending a signal on up to three MIDI channels when a note is played and in `single’ it acts as a single keyboard.
+The fourth revision of the AXiS-64 firmware introduced three different keyboard modes; 'single', 'split' and 'layer'.  In 'split' mode the keyboard is split into three 64 note keyboards; in layer it becomes one keyboard sending a signal on up to three MIDI channels when a note is played and in 'single' it acts as a single keyboard.
 \end{enumerate}
 \subsection{Systems Research Evaluation}
 The products listed above are but a few among the systems available on the market, but each one exhibits interesting or unique characteristics that can be taken as inspiration for our project. In addition to this, there are persistent themes among all products that too will influence our designs.\\
@@ -118,9 +118,11 @@ Scales and triads can be transposed far more easily on a harmonic keyboard than 
 \end{center}
 \subsection{Technical Research}
 \subsubsection{MIDI}
-
+TO BE COMPLETED
 \subsubsection{Working with Hexagons}
-
+TO BE COMPLETED
+\subsubsection{Technical Research Evaluation}
+TO BE COMPLETED
 \section{Requirements Specification}
 Our project has several important key features which need to be followed and implemented; they can be described in the functional, in other words, definitions of what the system must do; and non-functional requirements, definitions of how the system is supposed to be. These are detailed henceforth:
 \subsection{Functional Requirements}
@@ -145,7 +147,7 @@ Our project has several important key features which need to be followed and imp
 \item \textit{Play} - Begins the sequencer, sending an initial pulse in a straight line in a specified direction.
 \item \textit{Stop} - Stops and `absorbs' the pulse at that position.
 \item \textit{Change} - Changes the direction of the pulse.
-\item \textit{Explode} - Causes the pulse to `split’, propagating new playheads from each edge of the hexagon it is placed on, but not going back on itself.
+\item \textit{Explode} - Causes the pulse to 'split', propagating new playheads from each edge of the hexagon it is placed on, but not going back on itself.
 \item \textit{Warp} - When the playhead meets a warp tile, it will spawn new playheads at each other warp tile placed on the grid, moving in the direction of entry. 
 \end{enumerate}
 
@@ -158,7 +160,7 @@ Our project has several important key features which need to be followed and imp
 \end{enumerate}
 \end{enumerate}
 
-\item A moving `pulse' or `playhead' should be used to trigger tiles placed on hexagons.
+\item A moving 'pulse' or 'playhead' should be used to trigger tiles placed on hexagons.
 \begin{enumerate}
 \item The playhead must move faster or slower based on the tempo specified.
 \item The playhead must move consistently with the tempo specified.
@@ -189,7 +191,7 @@ Our project has several important key features which need to be followed and imp
 \item Grids must be able to be played simultaneously.
 \end{enumerate}
 
-\item Global `Start' and `Stop' buttons should be implemented to start and stio playheads over all grids.
+\item Global `Start' and `Stop' buttons should be implemented to start and stop playheads over all grids.
 \begin{enumerate}
 \item Individual grids must be able to be selected and deselected for play.
 \end{enumerate}
@@ -216,7 +218,6 @@ Our project has several important key features which need to be followed and imp
 \item Select grids to play.
 \item Open help screen.
 \end{enumerate}
-
 
 \end{enumerate}
 \subsection{Non-Functional Requirements}
@@ -290,7 +291,7 @@ Key = ((Pulse.tLocation \times 36) + (Pulse.fLocation \times 6) + direction)
 \end{equation}
 
 \subsection{Timing and Tempo}
-Timing the whole system was very important. To do this I used Timer that was scheduled at a fixed rate. This meant that it would call the run method every set amount of time irrespectively if it had finished the methods or not. See figure 2. The timer controlled how often the pulses moved one space in the grid. Because each grid could have a different tempo I needed to keep all the grids synchronised but still have different tempos. To do this in grid a tempo is assigned with a value of 1, 2, 4, 8, or 16.\\
+Timing the whole system was very important. To do this I used Timer that was scheduled at a fixed rate. This meant that it would call the run method every set amount of time irrespectively if it had finished the methods or not. The timer controlled how often the pulses moved one space in the grid. Because each grid could have a different tempo I needed to keep all the grids synchronised but still have different tempos. To do this in grid a tempo is assigned with a value of 1, 2, 4, 8, or 16.\\
 \\
 Then every loop of the base timer a value is incremented by 1 this value is then MODed against the tempo of each grid, if it is 0 then it will move the pulses inside this grid by one, it if it not it will skip this grid. This is explained clearly in the below code for the \textit{play()} method. At the end of every loop queues of notes are played, this keeps everything in sync.\\
 \begin{center}
@@ -316,31 +317,61 @@ function play()
 \begin{center}
 \includegraphics[scale=0.5]{7.png}
 \end{center}
-One feature of the program that was much easier to implement than expected was being able to transpose the whole grid and changing the start note of each grid on the fly. You could use the fact hexagons where stored in a 2nd to your advantage and that MIDI notes could be stored as numbers. Studying how the harmonic table works (figure 5), and finding patterns how the notes were placed we were able to write a simple formula (figure 6), that selecting a start node of the grid, it could then place the correct notes in the correct place. Putting this formula then in a loop that goes through the array meant it could be called at any time even during play, as hexagon cells themselves held the note numbers. This formula would work for any size grid, so if we wanted to extend the table at some point that would be possible. 
+One feature of the program that was much easier to implement than expected was being able to transpose the whole grid and changing the start note of each grid on the fly. You could use the fact hexagons where stored in a 2nd to your advantage and that MIDI notes could be stored as numbers. Studying how the harmonic table works (above), and finding patterns how the notes were placed we were able to write a simple formula (below), that selecting a start node of the grid, it could then place the correct notes in the correct place. Putting this formula then in a loop that goes through the array meant it could be called at any time even during play, as hexagon cells themselves held the note numbers. This formula would work for any size grid, so if we wanted to extend the table at some point that would be possible. \\
 
-\section{Implementation of Data Structures and Methods}
-\subsection{Timers}
-\subsection{Hexagon Cells}
-\subsection{Images}
+\subsubsection{Transposition Formula}
+\begin{center}
+\textit{The note for any given i, and j cell on the grid can be given by:}\\
+$ n = startNote - (7 \times j) \linebreak note = ((n + 4) - ((( i \% 2) \times 7))) $
+\end{center}
+
+\subsection{Sound Production}
+The sound creation went through many stages, and indeed, could still be seen as a work in progress. The most important of the system was keeping everything synchronised. If 20 notes were scheduled to play at the same time, then they all should be played at exactly the same time, not milliseconds apart. To do this you can see in figure 3 there is a method call playNotes() this would play a track containing all that notes that had to be played at that moment in time. The way the notes were added to this track was; As you now know, the pulse move through the grid, step by step, if it came into contact with a tile it would have an effect. If that tiles properties were set for it to play a note, then a method was called (figure 8), and the note for that hexagon was passed into the sound sequencer, each note had an on, off and instrument set to it. Once one whole loop had gone through, the playNotes() method would send this track off to a sequencer in a new thread and play them all at once, this would happen repeatedly every loop. Figure 9 explains this in picture form. 
+
+\begin{center}
+
+$ soundSequencer.queueNote(hexCellCurrent.getNote(), channel);  $\\
+
+\textbf{queueNote Method}
+\medskip 
+\includegraphics[scale=0.25]{8.png}
+
+\end{center}
+
+\section{Implementation of Key Data Structures and Methods}
+???????????????????
+
+\pagebreak
+\section{Code Plan}
+\begin{center}
+\includegraphics[scale=0.65, angle=270]{plan.png}
+\end{center}
+\pagebreak
 
 \section{Testing}
-sdtujstyuj
+TO BE COMPLETED
 
 \part{Project Meta-Comment}
-hdghsghh
 \section{Updates since Interim Report}
-
+There have been numerous updates to the project as a whole since the last report. 
+TO BE COMPLETED
 \section{Time and Planning}
-
+TO BE COMPLETED
 \section{Problems Encountered}
-
+TO BE COMPLETED
 
 \part{Conclusion}
+TO BE COMPLETED
 
+\pagebreak
 \part{Appendices}
 klujghf;kjghglkjghslkjh
 \section{References}
 \bibliographystyle{IEEEtran}
 \bibliography{reportReferences}
 
+\section{Software Instruction Manual}
+TO BE COMPLETED
+\section{Weekly Formal Meeting Minutes}
+TO BE COMPLETED
 \end{document}
