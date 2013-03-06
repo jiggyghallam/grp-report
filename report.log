@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 13:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 13:54
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -207,7 +207,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
@@ -221,12 +221,12 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
@@ -243,60 +243,60 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--67
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--67
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
 <3.jpg, id=22, 401.5pt x 259.97125pt>
 File: 3.jpg Graphic file (type jpg)
  <use 3.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
 [4 <./2.jpg> <./3.jpg>] <4.jpg, id=26, 451.6875pt x 307.1475pt>
 File: 4.jpg Graphic file (type jpg)
  <use 4.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 89--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 <5.png, id=27, 715.67375pt x 352.31625pt>
 File: 5.png Graphic file (type png)
  <use 5.png> [5 <./4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 104.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -306,7 +306,7 @@ File: scale.png Graphic file (type png)
 <scale2.jpg, id=32, 102.1416pt x 53.4798pt>
 File: scale2.jpg Graphic file (type jpg)
  <use scale2.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
@@ -314,7 +314,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--116
 File: scale3.png Graphic file (type png)
  <use scale3.png> [6 <./5.png (PNG copy)> <./scale.png (PNG copy)> <./scale2.jp
 g> <./scale3.png>] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 241--244
+Underfull \hbox (badness 10000) in paragraph at lines 242--245
 
  []
 
@@ -343,27 +343,27 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [10 <./6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--297
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--297
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
@@ -373,7 +373,7 @@ File: utimer.png Graphic file (type png)
 <7.png, id=61, 664.4825pt x 408.52625pt>
 File: 7.png Graphic file (type png)
  <use 7.png>
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
@@ -387,7 +387,27 @@ File: plan.png Graphic file (type png)
 Overfull \vbox (19.82436pt too high) has occurred while \output is active []
 
 
-[14 <./plan.png (PNG copy)>] [15] (./report.bbl
+[14 <./plan.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 357--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--364
+
+ []
+
+[15] (./report.bbl
 Underfull \hbox (badness 1014) in paragraph at lines 26--29
 []\OT1/cmr/m/n/10 M. Kaltenbrun-ner, ``Tan-gi-ble mu-si-cal in-ter-faces,'' 201
 3. [On-line]. Avail-able:
@@ -418,7 +438,7 @@ c/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (17 pages, 1251553 bytes).
+Output written on report.pdf (17 pages, 1252896 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
