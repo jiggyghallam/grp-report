@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 13:54
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 14:48
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -343,27 +343,27 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [10 <./6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+Underfull \hbox (badness 10000) in paragraph at lines 284--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 294--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 294--297
 
  []
 
@@ -373,7 +373,7 @@ File: utimer.png Graphic file (type png)
 <7.png, id=61, 664.4825pt x 408.52625pt>
 File: 7.png Graphic file (type png)
  <use 7.png>
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
@@ -388,22 +388,22 @@ Overfull \vbox (19.82436pt too high) has occurred while \output is active []
 
 
 [14 <./plan.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
@@ -438,7 +438,7 @@ c/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (17 pages, 1252896 bytes).
+Output written on report.pdf (17 pages, 1253260 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
