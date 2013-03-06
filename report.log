@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 14:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 15:16
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -195,23 +195,26 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-[1
+<hexlogo.png, id=1, 711.65875pt x 368.37625pt>
+File: hexlogo.png Graphic file (type png)
+ <use hexlogo.png> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report.toc [1])
+ <./hexlogo.png>] [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rep
+ort.toc
+[1])
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
-
-[2]
+ [2]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-<1.jpg, id=17, 401.5pt x 301.125pt>
+<1.jpg, id=23, 401.5pt x 301.125pt>
 File: 1.jpg Graphic file (type jpg)
  <use 1.jpg>
 Missing character: There is no â in font cmti10!
@@ -221,16 +224,16 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--51
+Underfull \hbox (badness 10000) in paragraph at lines 47--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--51
+Underfull \hbox (badness 10000) in paragraph at lines 47--52
 
  []
 
-<2.jpg, id=18, 321.2pt x 481.8pt>
+<2.jpg, id=24, 321.2pt x 481.8pt>
 File: 2.jpg Graphic file (type jpg)
  <use 2.jpg> [3 <./1.jpg>]
 Missing character: There is no â in font cmr10!
@@ -243,85 +246,85 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--68
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--68
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
 
  []
 
-<3.jpg, id=22, 401.5pt x 259.97125pt>
+<3.jpg, id=28, 401.5pt x 259.97125pt>
 File: 3.jpg Graphic file (type jpg)
  <use 3.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
 
  []
 
-[4 <./2.jpg> <./3.jpg>] <4.jpg, id=26, 451.6875pt x 307.1475pt>
+[4 <./2.jpg> <./3.jpg>] <4.jpg, id=32, 451.6875pt x 307.1475pt>
 File: 4.jpg Graphic file (type jpg)
  <use 4.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--95
+Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
-<5.png, id=27, 715.67375pt x 352.31625pt>
+<5.png, id=33, 715.67375pt x 352.31625pt>
 File: 5.png Graphic file (type png)
  <use 5.png> [5 <./4.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
-<scale.png, id=31, 147.55125pt x 91.84312pt>
+<scale.png, id=38, 147.55125pt x 91.84312pt>
 File: scale.png Graphic file (type png)
  <use scale.png>
-<scale2.jpg, id=32, 102.1416pt x 53.4798pt>
+<scale2.jpg, id=39, 102.1416pt x 53.4798pt>
 File: scale2.jpg Graphic file (type jpg)
  <use scale2.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 
  []
 
-<scale3.png, id=33, 199.74625pt x 133.49875pt>
+<scale3.png, id=40, 199.74625pt x 133.49875pt>
 File: scale3.png Graphic file (type png)
  <use scale3.png> [6 <./5.png (PNG copy)> <./scale.png (PNG copy)> <./scale2.jp
 g> <./scale3.png>] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-<6.png, id=47, 564.60938pt x 564.60938pt>
+<6.png, id=52, 564.60938pt x 564.60938pt>
 File: 6.png Graphic file (type png)
  <use 6.png> [9]
 Missing character: There is no â in font cmr10!
@@ -343,44 +346,44 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
  [10 <./6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--289
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--297
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--297
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
-<utimer.png, id=57, 803.0pt x 803.0pt>
+<utimer.png, id=62, 803.0pt x 803.0pt>
 File: utimer.png Graphic file (type png)
  <use utimer.png> [11]
-<7.png, id=61, 664.4825pt x 408.52625pt>
+<7.png, id=67, 664.4825pt x 408.52625pt>
 File: 7.png Graphic file (type png)
  <use 7.png>
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
 [12 <./utimer.png (PNG copy)> <./7.png>]
-<8.png, id=69, 1482.53876pt x 368.37625pt>
+<8.png, id=74, 1482.53876pt x 368.37625pt>
 File: 8.png Graphic file (type png)
- <use 8.png> [13 <./8.png (PNG copy)>] <plan.png, id=73, 1066.82565pt x 536.845
+ <use 8.png> [13 <./8.png (PNG copy)>] <plan.png, id=78, 1066.82565pt x 536.845
 66pt>
 File: plan.png Graphic file (type png)
  <use plan.png>
@@ -388,22 +391,22 @@ Overfull \vbox (19.82436pt too high) has occurred while \output is active []
 
 
 [14 <./plan.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 352--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--359
+Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
@@ -421,10 +424,10 @@ ro-idm-rhythm-
 
 ) [16] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2010 strings out of 495061
- 25046 string characters out of 1182622
+ 2015 strings out of 495061
+ 25120 string characters out of 1182622
  84866 words of memory out of 3000000
- 5180 multiletter control sequences out of 15000+50000
+ 5184 multiletter control sequences out of 15000+50000
  10203 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,7n,32p,1094b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -438,9 +441,9 @@ c/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
 m/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (17 pages, 1253260 bytes).
+Output written on report.pdf (18 pages, 1290777 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
