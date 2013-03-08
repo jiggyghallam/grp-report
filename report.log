@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.11)  8 MAR 2013 14:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.11)  8 MAR 2013 14:56
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -490,44 +490,66 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ¦ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--429
+Overfull \hbox (37.90085pt too wide) in paragraph at lines 408--409
+[]\OT1/cmr/bx/n/10 Example out-put data: $\OML/cmm/m/it/10 Note \OT1/cmr/m/n/10
+ = 67\OML/cmm/m/it/10 :Thedirectionis\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :Thenode
+is\OT1/cmr/m/n/10 (10\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6)\OML/cmm/m/it/10 :Now
+thedirectionis\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :Thenodeis\OT1/cmr/m/n/10 (10\O
+ML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5)$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--429
+Underfull \hbox (badness 10000) in paragraph at lines 415--418
+
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--429
+Underfull \hbox (badness 10000) in paragraph at lines 425--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--429
+Underfull \hbox (badness 10000) in paragraph at lines 425--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--432
 
  []
 
 [16] <gantt.png, id=89, 963.6pt x 665.48625pt>
 File: gantt.png Graphic file (type png)
  <use gantt.png>
-Underfull \hbox (badness 10000) in paragraph at lines 430--436
+Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
 
-Overfull \hbox (12.8693pt too wide) in paragraph at lines 430--436
+Overfull \hbox (12.8693pt too wide) in paragraph at lines 433--439
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--436
+Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--436
+Underfull \hbox (badness 10000) in paragraph at lines 433--439
 
  []
 
@@ -535,7 +557,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--436
 File: kb.png Graphic file (type png)
  <use kb.png>
 
-LaTeX Warning: Citation `kb' on page 19 undefined on input line 440.
+LaTeX Warning: Citation `kb' on page 19 undefined on input line 443.
 
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
@@ -543,22 +565,22 @@ Missing character: There is no ™ in font cmr10!
 <pert.png, id=98, 893.58844pt x 487.06969pt>
 File: pert.png Graphic file (type png)
  <use pert.png>
-Underfull \hbox (badness 10000) in paragraph at lines 440--447
+Underfull \hbox (badness 10000) in paragraph at lines 443--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--447
+Underfull \hbox (badness 10000) in paragraph at lines 443--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--447
+Underfull \hbox (badness 10000) in paragraph at lines 443--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--447
+Underfull \hbox (badness 10000) in paragraph at lines 443--450
 
  []
 
@@ -576,17 +598,17 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--454
+Underfull \hbox (badness 10000) in paragraph at lines 453--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--454
+Underfull \hbox (badness 10000) in paragraph at lines 453--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--454
+Underfull \hbox (badness 10000) in paragraph at lines 453--457
 
  []
 
@@ -625,7 +647,7 @@ fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (24 pages, 1654538 bytes).
+Output written on report.pdf (24 pages, 1656131 bytes).
 PDF statistics:
  146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
