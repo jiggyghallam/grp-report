@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.3.1)  6 MAR 2013 15:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.11)  8 MAR 2013 14:47
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -279,9 +279,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
-<5.png, id=33, 715.67375pt x 352.31625pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[5 <./4.jpg>] <5.png, id=37, 715.67375pt x 352.31625pt>
 File: 5.png Graphic file (type png)
- <use 5.png> [5 <./4.jpg>]
+ <use 5.png>
 Underfull \hbox (badness 10000) in paragraph at lines 103--105
 
  []
@@ -316,7 +325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--118
 <scale3.png, id=40, 199.74625pt x 133.49875pt>
 File: scale3.png Graphic file (type png)
  <use scale3.png> [6 <./5.png (PNG copy)> <./scale.png (PNG copy)> <./scale2.jp
-g> <./scale3.png>] [7] [8]
+g>] [7 <./scale3.png>] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
@@ -390,27 +399,198 @@ File: plan.png Graphic file (type png)
 Overfull \vbox (19.82436pt too high) has occurred while \output is active []
 
 
-[14 <./plan.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+[14 <./plan.png (PNG copy)>] <9.png, id=82, 703.62875pt x 264.99pt>
+File: 9.png Graphic file (type png)
+
+<use 9.png>
+
+LaTeX Warning: Citation `SEP' on page 15 undefined on input line 353.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+LaTeX Warning: Citation `SEP' on page 15 undefined on input line 355.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--360
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
 
  []
 
-[15] (./report.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--368
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+[15 <./9.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--429
+
+ []
+
+[16] <gantt.png, id=89, 963.6pt x 665.48625pt>
+File: gantt.png Graphic file (type png)
+ <use gantt.png>
+Underfull \hbox (badness 10000) in paragraph at lines 430--436
+
+ []
+
+
+Overfull \hbox (12.8693pt too wide) in paragraph at lines 430--436
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--436
+
+ []
+
+[17] [18 <./gantt.png>] <kb.png, id=97, 1371.1225pt x 770.88pt>
+File: kb.png Graphic file (type png)
+ <use kb.png>
+
+LaTeX Warning: Citation `kb' on page 19 undefined on input line 440.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+<pert.png, id=98, 893.58844pt x 487.06969pt>
+File: pert.png Graphic file (type png)
+ <use pert.png>
+Underfull \hbox (badness 10000) in paragraph at lines 440--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--447
+
+ []
+
+[19 <./kb.png (PNG copy)>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--454
+
+ []
+
+[20 <./pert.png (PNG copy)>] [21] (./report.bbl
 Underfull \hbox (badness 1014) in paragraph at lines 26--29
 []\OT1/cmr/m/n/10 M. Kaltenbrun-ner, ``Tan-gi-ble mu-si-cal in-ter-faces,'' 201
 3. [On-line]. Avail-able:
@@ -422,28 +602,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
 ro-idm-rhythm-
  []
 
-) [16] (./report.aux) ) 
+) [22] (./report.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2015 strings out of 495061
- 25120 string characters out of 1182622
- 84866 words of memory out of 3000000
- 5184 multiletter control sequences out of 15000+50000
+ 2037 strings out of 495061
+ 25345 string characters out of 1182620
+ 85866 words of memory out of 3000000
+ 5202 multiletter control sequences out of 15000+50000
  10203 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,7n,32p,1094b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (18 pages, 1290976 bytes).
+ 27i,7n,32p,1309b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on report.pdf (24 pages, 1654538 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

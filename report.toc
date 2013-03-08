@@ -9,15 +9,15 @@
 \contentsline {subsection}{\numberline {2.2}Systems Research Evaluation}{5}
 \contentsline {subsection}{\numberline {2.3}Market Research}{5}
 \contentsline {subsection}{\numberline {2.4}Music Research}{6}
-\contentsline {subsection}{\numberline {2.5}Technical Research}{6}
-\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{6}
+\contentsline {subsection}{\numberline {2.5}Technical Research}{7}
+\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{7}
 \contentsline {subsubsection}{\numberline {2.5.2}Working with Hexagons}{7}
 \contentsline {subsubsection}{\numberline {2.5.3}Technical Research Evaluation}{7}
 \contentsline {section}{\numberline {3}Requirements Specification}{7}
 \contentsline {subsection}{\numberline {3.1}Functional Requirements}{7}
-\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{8}
-\contentsline {part}{II\hspace {1em}Design}{8}
-\contentsline {section}{\numberline {4}Software Design}{8}
+\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{9}
+\contentsline {part}{II\hspace {1em}Design}{9}
+\contentsline {section}{\numberline {4}Software Design}{9}
 \contentsline {subsection}{\numberline {4.1}The Grids}{9}
 \contentsline {subsection}{\numberline {4.2}Pulse}{9}
 \contentsline {subsection}{\numberline {4.3}Tiles}{10}
@@ -34,12 +34,15 @@
 \contentsline {subsection}{\numberline {6.4}Sound Production}{13}
 \contentsline {section}{\numberline {7}Code Plan}{14}
 \contentsline {section}{\numberline {8}Testing}{15}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{15}
-\contentsline {section}{\numberline {9}Updates since Interim Report}{15}
-\contentsline {section}{\numberline {10}Time and Planning}{15}
-\contentsline {section}{\numberline {11}Problems Encountered}{15}
-\contentsline {part}{V\hspace {1em}Conclusion}{15}
-\contentsline {part}{VI\hspace {1em}Appendices}{16}
-\contentsline {section}{\numberline {12}References}{16}
-\contentsline {section}{\numberline {13}Software Instruction Manual}{16}
-\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{16}
+\contentsline {subsection}{\numberline {8.1}Unit Testing}{15}
+\contentsline {subsection}{\numberline {8.2}Functional Testing}{15}
+\contentsline {subsubsection}{\numberline {8.2.1}User Interface Testing Example}{16}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{16}
+\contentsline {section}{\numberline {9}Updates since Interim Report}{16}
+\contentsline {section}{\numberline {10}Time and Planning}{17}
+\contentsline {section}{\numberline {11}Problems Encountered}{20}
+\contentsline {part}{V\hspace {1em}Conclusion}{21}
+\contentsline {part}{VI\hspace {1em}Appendices}{22}
+\contentsline {section}{\numberline {12}References}{22}
+\contentsline {section}{\numberline {13}Software Instruction Manual}{22}
+\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{22}

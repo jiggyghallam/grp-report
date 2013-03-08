@@ -95,7 +95,7 @@ Among these common themes is the use of physical interaction as an interface bet
 In addition to this, particularly interesting features of researched products that we may wish to take forward into our project include the multiple `layers' featured in the Tenori-On and the TonePad Pro's ability to export and share music and created projects. 
 
 \subsection{Market Research}
-TO BE COMPLETED
+We conducted a survey (attached in appendices) targeting general music enthusiasts as well as complete beginners in the music field to find out whether our software would be desirable. Very few of the people we asked had heard of the ReacTogon, the concept instrument but most had some sort of interactive music experience where you would either use a mouse for a desktop application or a touch screen app to create some sort of music. We received contrasting opinions on the pre-existing systems, some of them liked the idea of the program being a portable touch screen app so they can continue working on their music on the go but they also pointed out that some of the features weren’t as advanced as the desktop applications. The desktop applications that were reviewed weren’t targeted at beginner users as some of the features were too complicated and functionality wasn’t as easy as the touch screen apps. The suggestion of a desktop application with touch screen capabilities was received well and most said they would be interested in using a program which combined the desirable features of both a touch screen app and a desktop application. 
 \subsection{Music Research}
 \begin{center}
 \includegraphics[scale=0.5]{5.png}
@@ -346,7 +346,79 @@ $ soundSequencer.queueNote(hexCellCurrent.getNote(), channel);  $\\
 \pagebreak
 
 \section{Testing}
-TO BE COMPLETED
+\begin{center}
+\includegraphics[scale=0.5]{9.png}\\
+\textbf{Planned Testing Phases}\\
+\end{center}
+The objective of testing is to find faults, defects in design, requirements and in code\cite{SEP}. With the help of testing, the defects would be fixed and the program can be improved to better meet customer’s needs. In addition, if tests find few faults, it can give confidence in the quality of our software. Our tests are planned to be completed in 4 phases which is unit test, function test, performance test and acceptance test. Once some components of our program are coded, we begin to test. This part only provides a discussion on the testing of the system, the detail test cases are given in Appendix 3. 
+\subsection{Unit Testing}
+Unit tests are written with JUnit. Some codes are written to provide a predetermined set of data to the components which are being tested and observe the results and check the internal data, logic, boundary conditions for input and output data \cite{SEP}. To write unit test, the first step is to read through the code and figure out what exactly the functions, the classes do. Make sure the code can be compiled and use some example data as input and compare the output with the expectation result. In JUnit, the function assertEquals() is usually used.\\
+\\
+For example, the class HexCell create a hexagon, calculates dimension, note and image of it. There are some functions like getImage(),flipState(),setNote() etc in it.\\
+\\
+A class HexCellTest is created as a unit test. In this test class, some initial values are set up.\\
+\\
+Example code: $ assertEquals(il.getImage(tile, state), hc.getImage()); $\\
+\\
+The code above is to test method getImage(). The first parameter in assertEquals() is the expected output and the second one is the actual output, if they are the same, when running the JUnit, the test of this method can pass which means the components which are being tested meet the requirement.\\
+\\
+There are other unit tests like PulseTest, TileTest. Some example data is provided to test the methods. Other test codes are provided in the project file.\\
+\\
+When finished testing the code, the system testing can be initiated. 
+
+\subsection{Functional Testing}
+Function tests are run to check whether the program is satisfying the customers' needs, they are based on the functional requirements. Our functional tests work at two levels:
+\begin{enumerate}
+\item Code level: Add System.out.println() in the code to print some example output data and check if it is processing right.\\
+For example, code ‘System.out.println("Note ="+note); ‘ is added in method playNote() and queueNote() to show the MIDI note numbers.
+\item  User interface level. Observe the results in the user interface level. For example, observe the image, the light and the sound which the application actually presents. Compare these with the result that the users are expecting. If they are exactly the same, the test is passed which means it meets the requirement. Otherwise, the test is failed and debugging is needed to make the test pass. An example test is shown below:
+\end{enumerate}
+
+\subsubsection{User Interface Testing Example}
+
+Functional requirement to test: Explode operator tile which can split a pulse into 5 different directions should be implemented.\\
+
+\textbf{Test steps:}
+\begin{enumerate}
+\item Click and place the blue ‘play’ button on the first hexagon tile.
+
+\item Click and place the blue ‘explode’ button on the second hexagon tile which is in the direction of the first one.
+
+\item Click ‘start’ button.
+\end{enumerate}
+
+\textbf{Expected result in steps:}
+\begin{enumerate}
+\item Should display a grey 'play' tile on the first hexagonal tile
+
+\item Should display a grey 'explode' button on the second hexagonal tile
+
+\item Should play a note and display blue light which represents the pulse from the first tile to the second tile. Then should play a different note at the second tile and display blue lights from the second tile to all directions except the opposite direction of the first tiles.
+\end{enumerate}
+
+\textbf{Actual result in steps:}
+\begin{enumerate}
+\item A grey “play” tile displays on the first hexagonal tile. Example output data: The node is (10,6)
+
+\item A grey “explode” tile displays on the second hexagonal tile. Example output data: The node is (10,3)
+
+\item The application plays a note and a blue light displays from the first tile to the second tile. Then the application plays a different note at the second tile and display blue lights from the second tile to all directions except the opposite direction of the first tiles’.
+\end{enumerate}
+
+\textbf{Example output data:} $ Note =67. The direction is 0. The node is (10,6). Now the direction is 0. The node is (10,5) $ …
+
+This output data is very long and the complete data is shown in the appendix. The actual results and the accepted ones are the same after comparing. Hence this test is passed. There are be a quite a lot of functional testing to make sure that the system operates as required and the detailed test cases are provided in appendix 3. 
+
+\subsection{Performance Testing}
+Performance tests are run to check whether the program meet the nonfunctional requirements. We decide to cover three types of performance test which are stress test, compatibility test and usability test. 
+\subsubsection{Stress Testing}
+This test is to ensure the software does not crash in conditions of insufficient computational resources such as low memory or running out of disk space.\\
+\\
+The CPU utilization rate is used in this test, although this test may not be very accurate for the reason that the CPU usage rate is always changing in a small rage.
+
+\textbf{Test:}
+Before run the application, the CPU usage rate is 0~1. When open the application it rise to 38 at most and stabilized around 8. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7 to 12. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 5.7. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
+
 
 \part{Project Meta-Comment}
 \section{Updates since Interim Report}
@@ -358,10 +430,30 @@ The code has also been vastly improved in terms of efficiency, having completely
 \\
 Overall, in terms of improvements and updates, we have attempted to turn what was effectively a prototype into a finished, complete product.\\
 \section{Time and Planning}
-TO BE COMPLETED
-\section{Problems Encountered}
-TO BE COMPLETED
+At the start of the project we immediately contacted each other via email to meet in order to organise meeting times and to assign roles within the project to each team member. After comparing each other's timetables we agreed to meet 4 times in a week; one 30 minute formal meeting with our supervisor, one 1 hour informal meeting at the beginning of each week to separate tasks for that week and review tasks completed the previous weeks, a 4 hour group working session and a quick 20 minute meeting before our formal meeting with our supervisor. We also agreed early on that the best way to monitor our progress and organise our time would be to create a Gantt chart (See below). \\
+\\
+\includegraphics[scale=0.7, angle=270]{gantt.png}
+\pagebreak
+The first thing we needed to do was create work breakdown structure so we separated tasks into different topics and then created sub-topics for each. Using deadline dates as guidance we made a rough estimate of how long each task will take then broke that down further for each sub topic and finally determined the order of the tasks. There is also a percentage complete column inserted, which was updated regularly so we can view progress on that particular section. We can also see if we are on track to complete each section. Using the Gantt chart we could view the critical path of the project as a whole. Critical path analysis shows an overview of the time-scale of the project - showing us if we are on track to complete the project on time. The critical path allows for slack time, so if a task is taking longer than necessary then it can be compensated as tasks overlap and eventually the critical path is not affected. For each subtopic, tasks were created and placed onto an online Kanban board.\\
+\\
+\begin{center}
+\includegraphics[scale=0.3]{kb.png}
+\textbf{KanBanFlow Main Board}
+\end{center}
+In our 1 hour informal meetings we were all assigned tasks for that week; these tasks were placed on a Kanban board using \cite{kb}. A Kanban board is an electronic board, which contains all the tasks in the product backlog (tasks that need to be completed); each task is separated into different columns, tasks that need to be done, tasks being analysed, tasks in development, tasks being tested or awaiting feedback and finally tasks completed. Each task has a name and description, each type of task is colour coded to correspond to a topic in the Gantt chart and also is an effective way of differentiating between the types of tasks. A team member is assigned to each task and a time estimate is made, when a task is completed the team member responsible fills in the time it took them to complete it. While a task is being done each member can show their progress by moving their task to the appropriate column. Each task has a due date and as it is an interactive board, it sends reminders to your email to tell you a task is due soon. The Kanban board was a very effective way of assigning tasks to each other and also a brilliant overview of the immediate tasks that needed to be completed. By using the Kanban board we were able to create a pert chart using the tasks.\\
+\\
+ A pert chart is similar to a Gantt chart but for a shorter timescale and each task in it is more detailed and specific. By using the tasks on the kanban board, we created a weekly Pert Chart to ensure the weekly tasks were completed and if any task is taking longer than usual then we were able to compensate as a critical path was determined first. As tasks weren’t completed sequentially but in parallel we could allow for slack time as well. Below is a example of the weekly charts we created.\\
+\\
+\includegraphics[scale=0.5]{pert.png}\\
+\\
+We used the tasks that were created at the beginning of the week. The critical path was then identified. The tasks that were on the critical path had to be monitored closely to ensure the successful completion of tasks that week, we did this by keeping in contact daily via Facebook or email or during our weekly group work session. Also during our Monday meetings we reviewed both the pert chart and Kanban boards and checked if we had successfully completed our assigned tasks for that week after this we updated our Gantt to view the overall progress of the project and check if we were on schedule to meet deadlines.\\
 
+
+\section{Problems Encountered}
+Fear of conflict remains to be a constant problem in group working and in our team it was apparent in the early stages of the project. As we were working with each other for the first time nobody wanted to offend each other so opinions on certain matters weren’t challenged and constructive criticism was taken in the wrong way which in turn affected the quality of our initial work. Fear of conflict led to the avoidance of accountability this was because at times the team would refuse to confront difficult issues within the project by avoiding responsibility with the issue at hand and just focus on their given roles. These issues were eradicated with time as the more we worked together the better understanding we had of each other so we were regularly able to provide each other feedback with tasks and also raise any issues if we had any and admit responsibility to some issues . This led to the team being more productive as the focus was working together to produce a high standard of work instead of everyone for their own.\\
+\\
+Working in a team meant that competency levels within the team differed. For example none of the team had considerable experience in testing. As a result some team members were asked to learn more about J-unit testing and begin writing test cases. Our lack of experience was evident as we weren’t sure which parts of the program needed testing, therefore we didn’t have sufficient test cases for our initial prototypes. This made it difficult for our developer’s to see which part of the code had bugs and needed changes, but after advice from our supervisor and increased proficiency in testing our latest prototype had sufficient test cases. Another issue with different competency levels was that some of the team were working considerably more than others, this was apparent when we were assigning tasks at the beginning of the week, lack of commitment was evident as some would avoid taking responsibility for the harder tasks and just take the smaller ones or even take responsibility for the tasks and not produce their work within the given time. By organising a group working session we were able to help each other stick to task deadlines and motivate each other.\\ 
+\\
 \part{Conclusion}
 It is our conviction that we have produced a project of a high quality and high standard. \textit{'HEX'} conforms to, fulfills and arguably exceeds the specification drawn up at the beginning of the project. Not only have we succesfully emulated the reacTogon hardware, but we have also extended it: affording a truly novel musical experience. The success of the software not only lies in the unique, neoteric functionality and experience; but also in the usability and contemporary design of the user interface. These factors coupled with the quality of the codebase, which employs Java best practice and object-oriented design yields a culmination of our efforts and an ultimately successful project.
 
