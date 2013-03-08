@@ -414,11 +414,23 @@ Performance tests are run to check whether the program meet the nonfunctional re
 \subsubsection{Stress Testing}
 This test is to ensure the software does not crash in conditions of insufficient computational resources such as low memory or running out of disk space.\\
 \\
-The CPU utilization rate is used in this test, although this test may not be very accurate for the reason that the CPU usage rate is always changing in a small rage.
-
+The CPU utilization rate is used in this test, although this test may not be very accurate for the reason that the CPU usage rate is always changing in a small rage.\\
+\\
 \textbf{Test:}
 Before run the application, the CPU usage rate is 0~1. When open the application it rise to 38 at most and stabilized around 8. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7 to 12. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 5.7. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
 
+\subsubsection{Compatability Testing}
+The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of computers. It is done to check if our application can run on different configurations of hardware. The application is tested to run on my laptop at home, my classmate’s computer, computers in school lab and library computer. It can run successfully on all. Other tests have been run on various linux distributions and have all been successful. Therefore it can be concluded that the application does run on Windows 7 and the sampled linux distributions.\\
+
+\subsubsection{Usability Testing}
+Usability testing, which is also called human factors testing, is based on the non-functional requirement that the application should be easy to use. It is concerned mainly with the use of the application.\\
+\\
+The test is divided into two aspects. The first one is to test the efficiency of using the application, calculate the time and the steps to complete basic tasks such as load a hex file, save a hex file and stop a beat. The application can respond immediately to complete tasks. And the steps are designed to be minimized. When start runs the application, the time to create layout is 505.0 ms(in some computers, the time may be longer).When using the application, for example, to play note through operator tiles, the basic steps are clicking the operator tile you want to add, clicking on the place on the grid and finally clicking the “start” button. And it only cost several seconds.\\
+\\
+The second one is to test the emotional response. It is to check if the user interface is easy to use and understand. Our application contains a clear background, clear layout and meaningful images for the control buttons. There are few words on the board to make things simpler. When the user does not know the meaning of the icons, the help menu can be used. In addition, the users may make mistakes and the edit button ‘undo’, ‘redo’ can be useful. Furthermore, Keyboard Shortcuts are enable to make sure the ease of use. The customers’ feelings are asked in the acceptable test. 
+
+\subsubsection{Acceptance Testing}
+The acceptable tests are conducted, evaluated by users. So we ask some other people to use our application, ask them to check if our application can meet their needs. This can also test the installation of the software when we run the software on the other computers. This is an ongoing test with each release of our software.
 
 \part{Project Meta-Comment}
 \section{Updates since Interim Report}

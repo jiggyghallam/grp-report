@@ -39,12 +39,15 @@
 \contentsline {subsubsection}{\numberline {8.2.1}User Interface Testing Example}{16}
 \contentsline {subsection}{\numberline {8.3}Performance Testing}{16}
 \contentsline {subsubsection}{\numberline {8.3.1}Stress Testing}{16}
+\contentsline {subsubsection}{\numberline {8.3.2}Compatability Testing}{17}
+\contentsline {subsubsection}{\numberline {8.3.3}Usability Testing}{17}
+\contentsline {subsubsection}{\numberline {8.3.4}Acceptance Testing}{17}
 \contentsline {part}{IV\hspace {1em}Project Meta-Comment}{17}
 \contentsline {section}{\numberline {9}Updates since Interim Report}{17}
-\contentsline {section}{\numberline {10}Time and Planning}{17}
-\contentsline {section}{\numberline {11}Problems Encountered}{20}
-\contentsline {part}{V\hspace {1em}Conclusion}{21}
-\contentsline {part}{VI\hspace {1em}Appendices}{22}
-\contentsline {section}{\numberline {12}References}{22}
-\contentsline {section}{\numberline {13}Software Instruction Manual}{22}
-\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{22}
+\contentsline {section}{\numberline {10}Time and Planning}{18}
+\contentsline {section}{\numberline {11}Problems Encountered}{21}
+\contentsline {part}{V\hspace {1em}Conclusion}{22}
+\contentsline {part}{VI\hspace {1em}Appendices}{23}
+\contentsline {section}{\numberline {12}References}{23}
+\contentsline {section}{\numberline {13}Software Instruction Manual}{23}
+\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{23}
