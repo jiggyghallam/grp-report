@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.11)  8 MAR 2013 15:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.10.11)  8 MAR 2013 17:47
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -195,26 +195,23 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-<hexlogo.png, id=1, 711.65875pt x 368.37625pt>
-File: hexlogo.png Graphic file (type png)
- <use hexlogo.png> [1
+[1
 
- <./hexlogo.png>] [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./rep
-ort.toc
-[1])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report.toc [1])
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
- [2]
+
+[2]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
-<1.jpg, id=23, 401.5pt x 301.125pt>
+<1.jpg, id=17, 401.5pt x 301.125pt>
 File: 1.jpg Graphic file (type jpg)
  <use 1.jpg>
 Missing character: There is no ‚ in font cmti10!
@@ -224,16 +221,16 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--52
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--52
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
-<2.jpg, id=24, 321.2pt x 481.8pt>
+<2.jpg, id=18, 321.2pt x 481.8pt>
 File: 2.jpg Graphic file (type jpg)
  <use 2.jpg> [3 <./1.jpg>]
 Missing character: There is no ‚ in font cmr10!
@@ -246,36 +243,36 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--69
+Underfull \hbox (badness 10000) in paragraph at lines 62--68
 
  []
 
-<3.jpg, id=28, 401.5pt x 259.97125pt>
+<3.jpg, id=22, 401.5pt x 259.97125pt>
 File: 3.jpg Graphic file (type jpg)
  <use 3.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
  []
 
-[4 <./2.jpg> <./3.jpg>] <4.jpg, id=32, 451.6875pt x 307.1475pt>
+[4 <./2.jpg> <./3.jpg>] <4.jpg, id=26, 451.6875pt x 307.1475pt>
 File: 4.jpg Graphic file (type jpg)
  <use 4.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 91--96
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--96
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
 
  []
 
@@ -288,54 +285,146 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[5 <./4.jpg>] <5.png, id=37, 715.67375pt x 352.31625pt>
+[5 <./4.jpg>] <5.png, id=30, 715.67375pt x 352.31625pt>
 File: 5.png Graphic file (type png)
  <use 5.png>
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
 
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<scale.png, id=38, 147.55125pt x 91.84312pt>
+<scale.png, id=31, 147.55125pt x 91.84312pt>
 File: scale.png Graphic file (type png)
  <use scale.png>
-<scale2.jpg, id=39, 102.1416pt x 53.4798pt>
+<scale2.jpg, id=32, 102.1416pt x 53.4798pt>
 File: scale2.jpg Graphic file (type jpg)
  <use scale2.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-<scale3.png, id=40, 199.74625pt x 133.49875pt>
+<scale3.png, id=33, 199.74625pt x 133.49875pt>
 File: scale3.png Graphic file (type png)
  <use scale3.png> [6 <./5.png (PNG copy)> <./scale.png (PNG copy)> <./scale2.jp
-g>] [7 <./scale3.png>] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 243--246
+g>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ò in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--128
+
+ []
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+<diag1.png, id=40, 116.00261pt x 55.5923pt>
+File: diag1.png Graphic file (type png)
+ <use diag1.png> [7 <./scale3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
+
+ []
+
+<image11.jpg, id=45, 539.76656pt x 317.68687pt>
+File: image11.jpg Graphic file (type jpg)
+ <use image11.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 159--162
+
+ []
+
+<image10.png, id=46, 401.5pt x 257.96375pt>
+File: image10.png Graphic file (type png)
+ <use image10.png>
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+<image16.png, id=47, 237.88875pt x 77.28876pt>
+File: image16.png Graphic file (type png)
+ <use image16.png> [8 <./diag1.png> <./image11.jpg> <./image10.png> <./image16.
+png>] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 286--289
 
  []
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-<6.png, id=52, 564.60938pt x 564.60938pt>
+<6.png, id=60, 564.60938pt x 564.60938pt>
 File: 6.png Graphic file (type png)
- <use 6.png> [9]
+ <use 6.png> [11]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
@@ -354,91 +443,132 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [10 <./6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+ [12 <./6.png>]
+<tileprogression.jpg, id=71, 572.1375pt x 338.01282pt>
+File: tileprogression.jpg Graphic file (type jpg)
+
+<use tileprogression.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 327--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+Underfull \hbox (badness 10000) in paragraph at lines 327--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--290
+Underfull \hbox (badness 10000) in paragraph at lines 327--331
+
+ []
+
+<logoprogression.jpg, id=72, 261.97874pt x 606.76688pt>
+File: logoprogression.jpg Graphic file (type jpg)
+
+<use logoprogression.jpg> [13 <./tileprogression.jpg>]
+<controlprogression.png, id=76, 1014.79124pt x 2695.06876pt>
+File: controlprogression.png Graphic file (type png)
+
+<use controlprogression.png> [14 <./logoprogression.jpg>]
+Overfull \vbox (0.1945pt too high) has occurred while \output is active []
+
+
+[15 <./controlprogression.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 338--342
 
  []
 
-<utimer.png, id=62, 803.0pt x 803.0pt>
+<numlayout.png, id=84, 1026.08344pt x 667.74469pt>
+File: numlayout.png Graphic file (type png)
+ <use numlayout.png>
+Underfull \hbox (badness 10000) in paragraph at lines 362--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--367
+
+ []
+
+[16 <./numlayout.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 372--375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--375
+
+ []
+
+<utimer.png, id=89, 803.0pt x 803.0pt>
 File: utimer.png Graphic file (type png)
- <use utimer.png> [11]
-<7.png, id=67, 664.4825pt x 408.52625pt>
+ <use utimer.png> [17 <./utimer.png (PNG copy)>] <7.png, id=93, 664.4825pt x 40
+8.52625pt>
 File: 7.png Graphic file (type png)
  <use 7.png>
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-[12 <./utimer.png (PNG copy)> <./7.png>]
-<8.png, id=74, 1482.53876pt x 368.37625pt>
+[18 <./7.png>] <8.png, id=101, 1482.53876pt x 368.37625pt>
 File: 8.png Graphic file (type png)
- <use 8.png> [13 <./8.png (PNG copy)>] <plan.png, id=78, 1066.82565pt x 536.845
-66pt>
+ <use 8.png> [19 <./8.png (PNG copy)>] <plan.png, id=105, 1066.82565pt x 536.84
+566pt>
 File: plan.png Graphic file (type png)
- <use plan.png>
+
+<use plan.png>
 Overfull \vbox (19.82436pt too high) has occurred while \output is active []
 
 
-[14 <./plan.png (PNG copy)>] <9.png, id=82, 703.62875pt x 264.99pt>
+[20 <./plan.png (PNG copy)>] <9.png, id=109, 703.62875pt x 264.99pt>
 File: 9.png Graphic file (type png)
 
 <use 9.png>
-
-LaTeX Warning: Citation `SEP' on page 15 undefined on input line 353.
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-LaTeX Warning: Citation `SEP' on page 15 undefined on input line 355.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--368
+Underfull \hbox (badness 10000) in paragraph at lines 432--445
 
  []
 
@@ -448,8 +578,8 @@ Missing character: There is no ò in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ò in font cmr10!
-[15 <./9.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+[21 <./9.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
@@ -490,7 +620,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 
-Overfull \hbox (37.90085pt too wide) in paragraph at lines 408--409
+Overfull \hbox (37.90085pt too wide) in paragraph at lines 485--486
 []\OT1/cmr/bx/n/10 Example out-put data: $\OML/cmm/m/it/10 Note \OT1/cmr/m/n/10
  = 67\OML/cmm/m/it/10 :Thedirectionis\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :Thenode
 is\OT1/cmr/m/n/10 (10\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 6)\OML/cmm/m/it/10 :Now
@@ -499,7 +629,7 @@ ML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
@@ -507,12 +637,12 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--421
+Underfull \hbox (badness 10000) in paragraph at lines 492--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--421
+Underfull \hbox (badness 10000) in paragraph at lines 492--498
 
  []
 
@@ -520,11 +650,11 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
-[16]
+[22]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -547,89 +677,87 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--431
+Underfull \hbox (badness 10000) in paragraph at lines 503--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--431
+Underfull \hbox (badness 10000) in paragraph at lines 503--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--444
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--444
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--444
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--444
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
 
  []
 
-[17] <gantt.png, id=93, 963.6pt x 665.48625pt>
+[23] <gantt.png, id=119, 963.6pt x 665.48625pt>
 File: gantt.png Graphic file (type png)
  <use gantt.png>
-Underfull \hbox (badness 10000) in paragraph at lines 445--451
+Underfull \hbox (badness 10000) in paragraph at lines 522--528
 
  []
 
 
-Overfull \hbox (12.8693pt too wide) in paragraph at lines 445--451
+Overfull \hbox (12.8693pt too wide) in paragraph at lines 522--528
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--451
+Underfull \hbox (badness 10000) in paragraph at lines 522--528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--451
+Underfull \hbox (badness 10000) in paragraph at lines 522--528
 
  []
 
-[18] [19 <./gantt.png>] <kb.png, id=100, 1371.1225pt x 770.88pt>
+[24] [25 <./gantt.png>] <kb.png, id=127, 1371.1225pt x 770.88pt>
 File: kb.png Graphic file (type png)
  <use kb.png>
-
-LaTeX Warning: Citation `kb' on page 20 undefined on input line 455.
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-<pert.png, id=101, 893.58844pt x 487.06969pt>
+
+<pert.png, id=128, 893.58844pt x 487.06969pt>
 File: pert.png Graphic file (type png)
  <use pert.png>
-Underfull \hbox (badness 10000) in paragraph at lines 455--462
+Underfull \hbox (badness 10000) in paragraph at lines 532--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--462
+Underfull \hbox (badness 10000) in paragraph at lines 532--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--462
+Underfull \hbox (badness 10000) in paragraph at lines 532--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--462
+Underfull \hbox (badness 10000) in paragraph at lines 532--539
 
  []
 
-[20 <./kb.png (PNG copy)>]
+[26 <./kb.png (PNG copy)>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -643,58 +771,54 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 542--546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 542--546
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 542--546
 
  []
 
-[21 <./pert.png (PNG copy)>] [22] (./report.bbl
-Underfull \hbox (badness 1014) in paragraph at lines 26--29
-[]\OT1/cmr/m/n/10 M. Kaltenbrun-ner, ``Tan-gi-ble mu-si-cal in-ter-faces,'' 201
-3. [On-line]. Avail-able:
- []
-
-
+[27 <./pert.png (PNG copy)>] [28] (./report.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 38--42
 []\OT1/cmr/m/n/10 [Online]. Avail-able: https://itunes.apple.com/app/hexatone-p
 ro-idm-rhythm-
  []
 
-) [23] (./report.aux)
 
-LaTeX Warning: There were undefined references.
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+[]\OT1/cmr/m/n/10 [Online]. Avail-able: http://uk.yamaha.com/en/products/musica
+l-
+ []
 
- ) 
+) [29] [30] [31] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2037 strings out of 495061
- 25345 string characters out of 1182620
- 85866 words of memory out of 3000000
- 5202 multiletter control sequences out of 15000+50000
+ 2076 strings out of 495061
+ 26027 string characters out of 1182620
+ 85889 words of memory out of 3000000
+ 5234 multiletter control sequences out of 15000+50000
  10203 words of font info for 37 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,7n,32p,1309b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (25 pages, 1658748 bytes).
+ 27i,7n,32p,1298b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on report.pdf (32 pages, 4978147 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 183 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

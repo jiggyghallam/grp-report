@@ -11,7 +11,6 @@
 \begin{titlepage}
 \title{G52GRP Interim Group Report\\HEX - A Chain Reactive Music Generator }
 \author{Group NHN2}
-\includegraphics[scale=0.6]{hexlogo.png}
 \date{22nd March 2013}
 \maketitle
 \thispagestyle{empty}
@@ -118,13 +117,57 @@ Scales and triads can be transposed far more easily on a harmonic keyboard than 
 \begin{center}
 \includegraphics[scale=0.5]{scale3.png}
 \end{center}
+
 \subsection{Technical Research}
 \subsubsection{MIDI}
-TO BE COMPLETED
-\subsubsection{Working with Hexagons}
-TO BE COMPLETED
-\subsubsection{Technical Research Evaluation}
-TO BE COMPLETED
+MIDI, short for Musical Instrument Digital Interface is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another. (Swift, 1997). A link in MIDI can handle 16 channels of information.\\
+\\
+MIDI uses messages containing instruction which controls a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters (Brewster, 2003). Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
+\\
+Messages send data in real time over a single channel. Examples include\cite{Huber}:
+\begin{itemize}
+\item Note on messages: Specify a notes, volume (velocity), note, pitch and the channel it should be played on.
+\item Note off messages: Same of note on, but turns off a note.
+\item Control change messages: Changes instrument settings.
+\end{itemize}
+From this research we were able to get a full grasp of MIDI and learned that we could set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change (instrument)” and “note-off” messages. One slight disappointment we found when researching MIDI was (at the time of the research) android devices did not fully support MIDI. 
+
+\subsubsection{Hash Maps}
+Hash map is a data structure that uses a hash function to map identifying values using a key. A key is made using a hash function that will index directly into the correct position, where the correct value will be found\cite{hashm}.\\
+\\
+Ideally, the hash function should assign each possible key to a unique location; we will take advantage of this feature to make sure no duplicate values pulses occupy the same space in the grid.\\
+\\
+Because we will not be taking advantage of any algorithms to deal with collision resolution, such as Separate chaining or Open addressing the access time of the hash map will always be constant. Giving insert, search and delete a O(1) access time (Stein, 2001), which is very fast. Of course we will need an array to keep track of the keys in use.\\
+\\
+To create the perfect hash function we will have to make sure there are no unwanted collisions, some sort of hashing function in base 6 will probably need to be use due to the fact that hexagons are 6 sided are in a grid. \\
+
+\subsubsection{Working With Hexagons}
+The immediate area of research, on beginning coding was how to generate and work with a grid of hexagons. There are few operations one might need to perform: finding hexagon's position by its index in the grid; picking a hexagon by mouse; finding neighbour cells; finding hexagon's corner coordinates etc.\\
+
+\begin{center}
+\includegraphics[scale=1]{diag1.png}\\
+\end{center}
+
+Using simple properties of hexagons, as shown in \textit{Fig. 1}, we are able to derive useful methods of manipulating and arranging them, and produce relevant algorithms for use in our code. \\
+\\
+We define the hexagon by its radius R, and find some other parameters based on it, such as W ("width"), S ("side") and H ("height"). We can calculate W,S,H easily with a known R.\\
+\\
+Hexagon grids can be derived from square grids. Since coordinate systems for squares are much easier, the derivation will guide us in designing coordinate systems for hexagons\cite{grids}. To turn a square grid into a hexagon grid, there are two steps needed. First, we must offset the columns (or rows). Second, we should split half the square edges and bend them in the middle.
+\begin{center}
+\includegraphics[scale=0.5]{image11.jpg}\\
+\end{center}
+The most common way \cite{gdmath} to offset columns is to offset every other column. Code using this approach looks at whether it is an odd or even column and chooses whether to offset it. A simpler approach is to offset each column by half a height more than the previous column. Code using this approach is more uniform, but the map shape is no longer rectangular, which can be inconvenient.\\
+\\
+With either offset approach, the next step is to split the vertical edges of the squares and bend them. When the bend is reduced from 180 degrees to 120 degrees, we get regular hexagons.
+\subsubsection{Identifying Hexagons}
+\begin{center}
+\includegraphics[scale=0.5]{image10.png}\\
+\end{center}
+From the picture above, we can figure out the formula for finding position of the top left corner of a hexagon cell by its array index (i, j):\\
+\begin{center}
+\includegraphics[scale=0.5]{image16.png}\\
+\end{center}
+With this knowledge we are now able to perform basic the operations and manipulations with hexagons necessary for use in our software.
 \section{Requirements Specification}
 Our project has several important key features which need to be followed and implemented; they can be described in the functional, in other words, definitions of what the system must do; and non-functional requirements, definitions of how the system is supposed to be. These are detailed henceforth:
 \subsection{Functional Requirements}
@@ -277,7 +320,41 @@ The whole system needs to be produce music at a reliable rhythm, therefore there
 If 4 separate pulses hit 4 different tiles on the same ‘tick’, they all should be played at the exactly the same time, and all 6 grids must follow this rule. For this to happen, there needs to be some sort of queue, where all notes that should be played at a set point in time are grouped together, then sent off to be played all at once. This could happen multiple times per second, so it looks like some sort of thread will be needed to play multiple sequences at the same time and will not halt the program.
 
 \section{User Interface Designs}
-TO BE COMPLETED
+The colour scheme of our software is grey-scale, with blue and orange highlights. This is comparable to the popular video game portal 2, and allows for easy differentials to be made between different functions of each tile, as well as allowing for an attractive overall look. The design of the tiles has been through several iterations as can be seen below:
+\begin{center}
+\includegraphics[scale=0.5]{tileprogression.jpg}
+\end{center}
+In the end, we decided on a drop shadow chrome look, accented with each colour depending on the corresponding tile's purpose. The progression is from left to right, and illustrates the process in which I went through designing the tiles. We started with a functional place holder, before investing more time into the appearance of the tile for the second iteration, and finally made a high resolution version for implementation. Each area of the graphics underwent a similar design progression, as can be seen here.\\
+\\
+The progression of the logo design can be seen below, and illustrates a process of refinement which involved critique from group members and my own design input.\\
+\\
+\begin{center}
+\includegraphics[scale=0.5]{logoprogression.jpg}
+\end{center}
+The controls section of the window changed over time, as we added new features to the project, and I developed the design theme and layout as time went on. The first version I put serious time into introduced the metallic them to compliment the logo and tiles, and although this was well received, there were a few issues with the chunkiness and curviness of some aspects. In order to improve beyond this, I took a new look at it and decided to split the window into two halves, move the tabs, and start a more simplistic controls look. This was very well received, so I polished things up and completed the design with this look, which is what our finished project looks like:
+\begin{center}
+\includegraphics[scale=0.26]{controlprogression.png}
+\end{center}
+As you can see, we have a consistent colour scheme, with elements of each part of the static and interactive design visibly tied together to give the impression of quality and completeness.\\
+\\
+Below is a description of the various features of our software's layout as labelled here:\\
+\\
+\begin{center}
+\includegraphics[scale=0.35]{numlayout.png}
+\end{center}
+
+\begin{enumerate}
+
+\item This is where the user changes the tab they are editing. The design of this tries to make it obvious that the tabs are above one another and how to change between them.
+\item The grid makes up for the bulk of the window real-estate, and rightly so as it is the main interactive element of the program. This is situated as can be seen, in the centre of the GUI, to the left of the controls.
+\item The user can change the tempo of the current tab here. The symbols of semiquaver, quaver, crotchet, minim and semibreve represent 16x, 8x, 4x, 2x, 1x, from left to right, respectively. This is to allow for an intuitive control of the current tab's tempo.
+\item This is the controls section of the control bar. It includes buttons which start/stop the pulses, enable deletion of individual tiles or clear the entire grid. Below these controls is a switch which changes what happens when the user clicks on the grid. The right hand selection will rotate a tile clicked on, and the left hand option will play the note corresponding with where the grid was clicked.
+\item This is where the tiles are placed. The blue tiles play a note when hit by a pulse, and then carry out their function, whereas the orange tiles carry out their function silently. A user clicks on a tile before choosing where to place it in the grid.
+\item This is the latest tile addition and is different to all the others. It allows the user to transport the pulse and its direction across the grid, without having to travel there. It is called the warp tile and is selected and placed like the other tiles.
+\item This is the edit section of the control bar. It allows the user to undo or redo any actions on the grid. The selection of grids to be played is now located in the menu.
+\item The menu bar is situated at the top left for conformity reasons. On a windows application, the menu is regularly here, and this is what our software is designed for.
+
+\end{enumerate}
 
 \part{Implementation}
 \section{Key Control Elements, Data Structures and Methods}
@@ -475,8 +552,11 @@ It is our conviction that we have produced a project of a high quality and high 
 \bibliographystyle{IEEEtran}
 \bibliography{reportReferences}
 
+\pagebreak
 \section{Software Instruction Manual}
-TO BE COMPLETED
+TO BE INSERTED SEPARATELY
+
+\pagebreak
 \section{Weekly Formal Meeting Minutes}
-TO BE COMPLETED
+TO BE INSERTED
 \end{document}
