@@ -1,45 +1,54 @@
-\contentsline {part}{I\hspace {1em}Preliminary Text}{3}
+\contentsline {part}{I\hspace {1em}Preliminaries}{3}
 \contentsline {section}{\numberline {1}Concept}{3}
 \contentsline {subsection}{\numberline {1.1}ReacTogon Concept}{3}
 \contentsline {subsection}{\numberline {1.2}Project Description}{3}
-\contentsline {section}{\numberline {2}Background Information and Research}{3}
-\contentsline {subsection}{\numberline {2.1}Existing Systems}{3}
-\contentsline {subsubsection}{\numberline {2.1.1}Examples of Existing Software Systems}{3}
+\contentsline {section}{\numberline {2}Background Information and Research}{4}
+\contentsline {subsection}{\numberline {2.1}Existing Systems}{4}
+\contentsline {subsubsection}{\numberline {2.1.1}Examples of Existing Software Systems}{4}
 \contentsline {subsubsection}{\numberline {2.1.2}Examples of Existing Hardware Systems}{4}
 \contentsline {subsection}{\numberline {2.2}Systems Research Evaluation}{5}
-\contentsline {subsection}{\numberline {2.3}Market Research}{5}
+\contentsline {subsection}{\numberline {2.3}Market Research}{6}
 \contentsline {subsection}{\numberline {2.4}Music Research}{6}
-\contentsline {subsection}{\numberline {2.5}Technical Research}{6}
-\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{6}
-\contentsline {subsubsection}{\numberline {2.5.2}Working with Hexagons}{7}
-\contentsline {subsubsection}{\numberline {2.5.3}Technical Research Evaluation}{7}
-\contentsline {section}{\numberline {3}Requirements Specification}{7}
-\contentsline {subsection}{\numberline {3.1}Functional Requirements}{7}
-\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{8}
-\contentsline {part}{II\hspace {1em}Design}{8}
-\contentsline {section}{\numberline {4}Software Design}{8}
-\contentsline {subsection}{\numberline {4.1}The Grids}{9}
-\contentsline {subsection}{\numberline {4.2}Pulse}{9}
-\contentsline {subsection}{\numberline {4.3}Tiles}{10}
-\contentsline {subsection}{\numberline {4.4}Keeping Time}{10}
-\contentsline {subsection}{\numberline {4.5}Creation of Sound}{11}
-\contentsline {section}{\numberline {5}User Interface Designs}{11}
-\contentsline {part}{III\hspace {1em}Implementation}{11}
-\contentsline {section}{\numberline {6}Key Control Elements, Data Structures and Methods}{11}
-\contentsline {subsection}{\numberline {6.1}Removal of Duplicates}{11}
-\contentsline {subsection}{\numberline {6.2}Timing and Tempo}{11}
-\contentsline {subsubsection}{\numberline {6.2.1}\textit {play()} method Implementation}{12}
-\contentsline {subsection}{\numberline {6.3}Transposition}{12}
-\contentsline {subsubsection}{\numberline {6.3.1}Transposition Formula}{13}
-\contentsline {subsection}{\numberline {6.4}Sound Production}{13}
-\contentsline {section}{\numberline {7}Code Plan}{14}
-\contentsline {section}{\numberline {8}Testing}{15}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{15}
-\contentsline {section}{\numberline {9}Updates since Interim Report}{15}
-\contentsline {section}{\numberline {10}Time and Planning}{15}
-\contentsline {section}{\numberline {11}Problems Encountered}{15}
-\contentsline {part}{V\hspace {1em}Conclusion}{15}
-\contentsline {part}{VI\hspace {1em}Appendices}{16}
-\contentsline {section}{\numberline {12}References}{16}
-\contentsline {section}{\numberline {13}Software Instruction Manual}{16}
-\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{16}
+\contentsline {subsection}{\numberline {2.5}Technical Research}{7}
+\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{7}
+\contentsline {subsubsection}{\numberline {2.5.2}Hash Maps}{7}
+\contentsline {subsubsection}{\numberline {2.5.3}Working With Hexagons}{8}
+\contentsline {subsubsection}{\numberline {2.5.4}Identifying Hexagons}{8}
+\contentsline {section}{\numberline {3}Requirements Specification}{9}
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{9}
+\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{10}
+\contentsline {part}{II\hspace {1em}Design}{11}
+\contentsline {section}{\numberline {4}Software Design}{11}
+\contentsline {subsection}{\numberline {4.1}The Grids}{11}
+\contentsline {subsection}{\numberline {4.2}Pulse}{11}
+\contentsline {subsection}{\numberline {4.3}Tiles}{12}
+\contentsline {subsection}{\numberline {4.4}Keeping Time}{12}
+\contentsline {subsection}{\numberline {4.5}Creation of Sound}{13}
+\contentsline {section}{\numberline {5}User Interface Designs}{13}
+\contentsline {part}{III\hspace {1em}Implementation}{16}
+\contentsline {section}{\numberline {6}Key Control Elements, Data Structures and Methods}{17}
+\contentsline {subsection}{\numberline {6.1}Removal of Duplicates}{17}
+\contentsline {subsection}{\numberline {6.2}Timing and Tempo}{17}
+\contentsline {subsubsection}{\numberline {6.2.1}\textit {play()} method Implementation}{18}
+\contentsline {subsection}{\numberline {6.3}Transposition}{18}
+\contentsline {subsubsection}{\numberline {6.3.1}Transposition Formula}{18}
+\contentsline {subsection}{\numberline {6.4}Sound Production}{18}
+\contentsline {section}{\numberline {7}Code Plan}{20}
+\contentsline {section}{\numberline {8}Testing}{21}
+\contentsline {subsection}{\numberline {8.1}Unit Testing}{21}
+\contentsline {subsection}{\numberline {8.2}Functional Testing}{21}
+\contentsline {subsubsection}{\numberline {8.2.1}User Interface Testing Example}{22}
+\contentsline {subsection}{\numberline {8.3}Performance Testing}{22}
+\contentsline {subsubsection}{\numberline {8.3.1}Stress Testing}{22}
+\contentsline {subsubsection}{\numberline {8.3.2}Compatability Testing}{23}
+\contentsline {subsubsection}{\numberline {8.3.3}Usability Testing}{23}
+\contentsline {subsubsection}{\numberline {8.3.4}Acceptance Testing}{23}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{23}
+\contentsline {section}{\numberline {9}Updates since Interim Report}{23}
+\contentsline {section}{\numberline {10}Time and Planning}{24}
+\contentsline {section}{\numberline {11}Problems Encountered}{27}
+\contentsline {part}{V\hspace {1em}Conclusion}{28}
+\contentsline {section}{\numberline {12}References}{28}
+\contentsline {part}{VI\hspace {1em}Appendices}{29}
+\contentsline {section}{\numberline {13}Software Instruction Manual}{30}
+\contentsline {section}{\numberline {14}Weekly Formal Meeting Minutes}{31}

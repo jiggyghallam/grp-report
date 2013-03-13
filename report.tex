@@ -11,7 +11,6 @@
 \begin{titlepage}
 \title{G52GRP Interim Group Report\\HEX - A Chain Reactive Music Generator }
 \author{Group NHN2}
-\includegraphics[scale=0.6]{hexlogo.png}
 \date{22nd March 2013}
 \maketitle
 \thispagestyle{empty}
@@ -95,18 +94,20 @@ Among these common themes is the use of physical interaction as an interface bet
 \\
 In addition to this, particularly interesting features of researched products that we may wish to take forward into our project include the multiple 'layers' featured in the Tenori-On and the TonePad Pro's ability to export and share music and created projects. 
 
+\pagebreak
 \subsection{Market Research}
-TO BE COMPLETED
+We conducted a survey (attached in appendices) targeting general music enthusiasts as well as complete beginners in the music field to find out whether our software would be desirable. Very few of the people we asked had heard of the ReacTogon, the concept instrument, but most had some sort of interactive music experience where you would either use a mouse for a desktop application or a touch screen app to create some sort of music. We received contrasting opinions on the pre-existing systems, some of them liked the idea of the program being a portable touch screen app so they can continue working on their music on the go but they also pointed out that some of the features were not as advanced as the desktop applications. The desktop applications that were reviewed were not targeted at beginner users as some of the features were too complicated and functionality was not as easy as the touch screen applications. The suggestion of a desktop application with touch screen capabilities was received well. Most said they would be interested in using a program which combined the desirable features of both a touch screen and desktop applications.
+ 
 \subsection{Music Research}
 \begin{center}
 \includegraphics[scale=0.5]{5.png}
 \end{center}
-In musical theory, an interval is the distance between two notes or pitches. Typically, these are represented with tones and semitones, where tones are the base unit of an interval. Certain intervals appear particularly often within music and composition as they can provide key melodies. Such intervals include the perfect fifth, and major and minor thirds. These intervals, which are 7, 4 and 3 semitones above the base note respectively, make up the notes used in major and minor triads and are the intervals used in the harmonic table based on the following set of rules:\\
+In musical theory, an interval is the distance between two notes or pitches, the degree of highness or lowness of a note --- based on it's frequency. Typically, these are represented with tones and semitones, where tones are the base unit of an interval. Certain intervals appear particularly often within music composition as they can provide key melodies. Such intervals include the perfect fifth, and major and minor thirds. These intervals, which are 7, 4 and 3 semitones above the base note respectively, make up the notes used in major and minor triads and are the intervals used in the harmonic table based on the following set of rules:\\
 \\
 \begin{itemize}
 \item Notes ascend by an interval of a fifth on the vertical axis.
-\item Notes ascend by an interval of a major third on one diagonal axis.
-\item Notes ascend by an interval of a minor third on the other diagonal axis.
+\item Notes ascend by an interval of a major third on one diagonal axis (north easterly).
+\item Notes ascend by an interval of a minor third on the other diagonal axis (north westerly).
 \end{itemize}
 This layout clusters complementary notes together, for example, all the notes in the C Major chord, namely C, E and G are adjoining. Scales are played by using simple, repeated patterns that can be transposed for playing in different keys. In this way, music can be easily and quickly created.\\
 \begin{center}
@@ -119,13 +120,57 @@ Scales and triads can be transposed far more easily on a harmonic keyboard than 
 \begin{center}
 \includegraphics[scale=0.5]{scale3.png}
 \end{center}
+
 \subsection{Technical Research}
 \subsubsection{MIDI}
-TO BE COMPLETED
-\subsubsection{Working with Hexagons}
-TO BE COMPLETED
-\subsubsection{Technical Research Evaluation}
-TO BE COMPLETED
+MIDI, short for Musical Instrument Digital Interface is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another. (Swift, 1997). A link in MIDI can handle 16 channels of information.\\
+\\
+MIDI uses messages containing instruction which controls a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters (Brewster, 2003). Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
+\\
+Messages send data in real time over a single channel. Examples include\cite{Huber}:
+\begin{itemize}
+\item Note on messages: Specify a notes, volume (velocity), note, pitch and the channel it should be played on.
+\item Note off messages: Same of note on, but turns off a note.
+\item Control change messages: Changes instrument settings.
+\end{itemize}
+From this research we were able to get a full grasp of MIDI and learned that we could set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change (instrument)” and “note-off” messages. One slight disappointment we found when researching MIDI was (at the time of the research) android devices did not fully support MIDI. 
+
+\subsubsection{Hash Maps}
+Hash map is a data structure that uses a hash function to map identifying values using a key. A key is made using a hash function that will index directly into the correct position, where the correct value will be found\cite{hashm}.\\
+\\
+Ideally, the hash function should assign each possible key to a unique location; we will take advantage of this feature to make sure no duplicate values pulses occupy the same space in the grid.\\
+\\
+Because we will not be taking advantage of any algorithms to deal with collision resolution, such as Separate chaining or Open addressing the access time of the hash map will always be constant. Giving insert, search and delete a O(1) access time (Stein, 2001), which is very fast. Of course we will need an array to keep track of the keys in use.\\
+\\
+To create the perfect hash function we will have to make sure there are no unwanted collisions, some sort of hashing function in base 6 will probably need to be use due to the fact that hexagons are 6 sided are in a grid. \\
+
+\subsubsection{Working With Hexagons}
+The immediate area of research, on beginning coding was how to generate and work with a grid of hexagons. There are few operations one might need to perform: finding hexagon's position by its index in the grid; picking a hexagon by mouse; finding neighbour cells; finding hexagon's corner coordinates etc.\\
+
+\begin{center}
+\includegraphics[scale=1]{diag1.png}\\
+\end{center}
+
+Using simple properties of hexagons, as shown in \textit{Fig. 1}, we are able to derive useful methods of manipulating and arranging them, and produce relevant algorithms for use in our code. \\
+\\
+We define the hexagon by its radius R, and find some other parameters based on it, such as W ("width"), S ("side") and H ("height"). We can calculate W,S,H easily with a known R.\\
+\\
+Hexagon grids can be derived from square grids. Since coordinate systems for squares are much easier, the derivation will guide us in designing coordinate systems for hexagons\cite{grids}. To turn a square grid into a hexagon grid, there are two steps needed. First, we must offset the columns (or rows). Second, we should split half the square edges and bend them in the middle.
+\begin{center}
+\includegraphics[scale=0.5]{image11.jpg}\\
+\end{center}
+The most common way \cite{gdmath} to offset columns is to offset every other column. Code using this approach looks at whether it is an odd or even column and chooses whether to offset it. A simpler approach is to offset each column by half a height more than the previous column. Code using this approach is more uniform, but the map shape is no longer rectangular, which can be inconvenient.\\
+\\
+With either offset approach, the next step is to split the vertical edges of the squares and bend them. When the bend is reduced from 180 degrees to 120 degrees, we get regular hexagons.
+\subsubsection{Identifying Hexagons}
+\begin{center}
+\includegraphics[scale=0.5]{image10.png}\\
+\end{center}
+From the picture above, we can figure out the formula for finding position of the top left corner of a hexagon cell by its array index (i, j):\\
+\begin{center}
+\includegraphics[scale=0.5]{image16.png}\\
+\end{center}
+With this knowledge we are now able to perform basic the operations and manipulations with hexagons necessary for use in our software.
 \section{Requirements Specification}
 Our project has several important key features which need to be followed and implemented; they can be described in the functional, in other words, definitions of what the system must do; and non-functional requirements, definitions of how the system is supposed to be. These are detailed henceforth:
 \subsection{Functional Requirements}
@@ -278,7 +323,41 @@ The whole system needs to be produce music at a reliable rhythm, therefore there
 If 4 separate pulses hit 4 different tiles on the same ‘tick’, they all should be played at the exactly the same time, and all 6 grids must follow this rule. For this to happen, there needs to be some sort of queue, where all notes that should be played at a set point in time are grouped together, then sent off to be played all at once. This could happen multiple times per second, so it looks like some sort of thread will be needed to play multiple sequences at the same time and will not halt the program.
 
 \section{User Interface Designs}
-TO BE COMPLETED
+The colour scheme of our software is grey-scale, with blue and orange highlights. This is comparable to the popular video game portal 2, and allows for easy differentials to be made between different functions of each tile, as well as allowing for an attractive overall look. The design of the tiles has been through several iterations as can be seen below:
+\begin{center}
+\includegraphics[scale=0.5]{tileprogression.jpg}
+\end{center}
+In the end, we decided on a drop shadow chrome look, accented with each colour depending on the corresponding tile's purpose. The progression is from left to right, and illustrates the process in which I went through designing the tiles. We started with a functional place holder, before investing more time into the appearance of the tile for the second iteration, and finally made a high resolution version for implementation. Each area of the graphics underwent a similar design progression, as can be seen here.\\
+\\
+The progression of the logo design can be seen below, and illustrates a process of refinement which involved critique from group members and my own design input.\\
+\\
+\begin{center}
+\includegraphics[scale=0.5]{logoprogression.jpg}
+\end{center}
+The controls section of the window changed over time, as we added new features to the project, and I developed the design theme and layout as time went on. The first version I put serious time into introduced the metallic them to compliment the logo and tiles, and although this was well received, there were a few issues with the chunkiness and curviness of some aspects. In order to improve beyond this, I took a new look at it and decided to split the window into two halves, move the tabs, and start a more simplistic controls look. This was very well received, so I polished things up and completed the design with this look, which is what our finished project looks like:
+\begin{center}
+\includegraphics[scale=0.26]{controlprogression.png}
+\end{center}
+As you can see, we have a consistent colour scheme, with elements of each part of the static and interactive design visibly tied together to give the impression of quality and completeness.\\
+\\
+Below is a description of the various features of our software's layout as labelled here:\\
+\\
+\begin{center}
+\includegraphics[scale=0.35]{numlayout.png}
+\end{center}
+
+\begin{enumerate}
+
+\item This is where the user changes the tab they are editing. The design of this tries to make it obvious that the tabs are above one another and how to change between them.
+\item The grid makes up for the bulk of the window real-estate, and rightly so as it is the main interactive element of the program. This is situated as can be seen, in the centre of the GUI, to the left of the controls.
+\item The user can change the tempo of the current tab here. The symbols of semiquaver, quaver, crotchet, minim and semibreve represent 16x, 8x, 4x, 2x, 1x, from left to right, respectively. This is to allow for an intuitive control of the current tab's tempo.
+\item This is the controls section of the control bar. It includes buttons which start/stop the pulses, enable deletion of individual tiles or clear the entire grid. Below these controls is a switch which changes what happens when the user clicks on the grid. The right hand selection will rotate a tile clicked on, and the left hand option will play the note corresponding with where the grid was clicked.
+\item This is where the tiles are placed. The blue tiles play a note when hit by a pulse, and then carry out their function, whereas the orange tiles carry out their function silently. A user clicks on a tile before choosing where to place it in the grid.
+\item This is the latest tile addition and is different to all the others. It allows the user to transport the pulse and its direction across the grid, without having to travel there. It is called the warp tile and is selected and placed like the other tiles.
+\item This is the edit section of the control bar. It allows the user to undo or redo any actions on the grid. The selection of grids to be played is now located in the menu.
+\item The menu bar is situated at the top left for conformity reasons. On a windows application, the menu is regularly here, and this is what our software is designed for.
+
+\end{enumerate}
 
 \part{Implementation}
 \section{Key Control Elements, Data Structures and Methods}
@@ -347,7 +426,91 @@ $ soundSequencer.queueNote(hexCellCurrent.getNote(), channel);  $\\
 \pagebreak
 
 \section{Testing}
-TO BE COMPLETED
+\begin{center}
+\includegraphics[scale=0.5]{9.png}\\
+\textbf{Planned Testing Phases}\\
+\end{center}
+The objective of testing is to find faults, defects in design, requirements and in code\cite{SEP}. With the help of testing, the defects would be fixed and the program can be improved to better meet customer’s needs. In addition, if tests find few faults, it can give confidence in the quality of our software. Our tests are planned to be completed in 4 phases which is unit test, function test, performance test and acceptance test. Once some components of our program are coded, we begin to test. This part only provides a discussion on the testing of the system, the detail test cases are given in Appendix 3. 
+\subsection{Unit Testing}
+Unit tests are written with JUnit. Some codes are written to provide a predetermined set of data to the components which are being tested and observe the results and check the internal data, logic, boundary conditions for input and output data \cite{SEP}. To write unit test, the first step is to read through the code and figure out what exactly the functions, the classes do. Make sure the code can be compiled and use some example data as input and compare the output with the expectation result. In JUnit, the function assertEquals() is usually used.\\
+\\
+For example, the class HexCell create a hexagon, calculates dimension, note and image of it. There are some functions like getImage(),flipState(),setNote() etc in it.\\
+\\
+A class HexCellTest is created as a unit test. In this test class, some initial values are set up.\\
+\\
+Example code: $ assertEquals(il.getImage(tile, state), hc.getImage()); $\\
+\\
+The code above is to test method getImage(). The first parameter in assertEquals() is the expected output and the second one is the actual output, if they are the same, when running the JUnit, the test of this method can pass which means the components which are being tested meet the requirement.\\
+\\
+There are other unit tests like PulseTest, TileTest. Some example data is provided to test the methods. Other test codes are provided in the project file.\\
+\\
+When finished testing the code, the system testing can be initiated. 
+
+\subsection{Functional Testing}
+Function tests are run to check whether the program is satisfying the customers' needs, they are based on the functional requirements. Our functional tests work at two levels:
+\begin{enumerate}
+\item Code level: Add System.out.println() in the code to print some example output data and check if it is processing right.\\
+For example, code ‘System.out.println("Note ="+note); ‘ is added in method playNote() and queueNote() to show the MIDI note numbers.
+\item  User interface level. Observe the results in the user interface level. For example, observe the image, the light and the sound which the application actually presents. Compare these with the result that the users are expecting. If they are exactly the same, the test is passed which means it meets the requirement. Otherwise, the test is failed and debugging is needed to make the test pass. An example test is shown below:
+\end{enumerate}
+
+\subsubsection{User Interface Testing Example}
+
+Functional requirement to test: Explode operator tile which can split a pulse into 5 different directions should be implemented.\\
+
+\textbf{Test steps:}
+\begin{enumerate}
+\item Click and place the blue ‘play’ button on the first hexagon tile.
+
+\item Click and place the blue ‘explode’ button on the second hexagon tile which is in the direction of the first one.
+
+\item Click ‘start’ button.
+\end{enumerate}
+
+\textbf{Expected result in steps:}
+\begin{enumerate}
+\item Should display a grey 'play' tile on the first hexagonal tile
+
+\item Should display a grey 'explode' button on the second hexagonal tile
+
+\item Should play a note and display blue light which represents the pulse from the first tile to the second tile. Then should play a different note at the second tile and display blue lights from the second tile to all directions except the opposite direction of the first tiles.
+\end{enumerate}
+
+\textbf{Actual result in steps:}
+\begin{enumerate}
+\item A grey “play” tile displays on the first hexagonal tile. Example output data: The node is (10,6)
+
+\item A grey “explode” tile displays on the second hexagonal tile. Example output data: The node is (10,3)
+
+\item The application plays a note and a blue light displays from the first tile to the second tile. Then the application plays a different note at the second tile and display blue lights from the second tile to all directions except the opposite direction of the first tiles’.
+\end{enumerate}
+
+\textbf{Example output data:} $ Note =67. The direction is 0. The node is (10,6). Now the direction is 0. The node is (10,5) $ …
+
+This output data is very long and the complete data is shown in the appendix. The actual results and the accepted ones are the same after comparing. Hence this test is passed. There are be a quite a lot of functional testing to make sure that the system operates as required and the detailed test cases are provided in appendix 3. 
+
+\subsection{Performance Testing}
+Performance tests are run to check whether the program meet the nonfunctional requirements. We decide to cover three types of performance test which are stress test, compatibility test and usability test. 
+\subsubsection{Stress Testing}
+This test is to ensure the software does not crash in conditions of insufficient computational resources such as low memory or running out of disk space.\\
+\\
+The CPU utilization rate is used in this test, although this test may not be very accurate for the reason that the CPU usage rate is always changing in a small rage.\\
+\\
+\textbf{Test:}
+Before run the application, the CPU usage rate is 0~1. When open the application it rise to 38 at most and stabilized around 8. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7 to 12. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 5.7. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
+
+\subsubsection{Compatability Testing}
+The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of computers. It is done to check if our application can run on different configurations of hardware. The application is tested to run on my laptop at home, my classmate’s computer, computers in school lab and library computer. It can run successfully on all. Other tests have been run on various linux distributions and have all been successful. Therefore it can be concluded that the application does run on Windows 7 and the sampled linux distributions.\\
+
+\subsubsection{Usability Testing}
+Usability testing, which is also called human factors testing, is based on the non-functional requirement that the application should be easy to use. It is concerned mainly with the use of the application.\\
+\\
+The test is divided into two aspects. The first one is to test the efficiency of using the application, calculate the time and the steps to complete basic tasks such as load a hex file, save a hex file and stop a beat. The application can respond immediately to complete tasks. And the steps are designed to be minimized. When start runs the application, the time to create layout is 505.0 ms(in some computers, the time may be longer).When using the application, for example, to play note through operator tiles, the basic steps are clicking the operator tile you want to add, clicking on the place on the grid and finally clicking the “start” button. And it only cost several seconds.\\
+\\
+The second one is to test the emotional response. It is to check if the user interface is easy to use and understand. Our application contains a clear background, clear layout and meaningful images for the control buttons. There are few words on the board to make things simpler. When the user does not know the meaning of the icons, the help menu can be used. In addition, the users may make mistakes and the edit button ‘undo’, ‘redo’ can be useful. Furthermore, Keyboard Shortcuts are enable to make sure the ease of use. The customers’ feelings are asked in the acceptable test. 
+
+\subsubsection{Acceptance Testing}
+The acceptable tests are conducted, evaluated by users. So we ask some other people to use our application, ask them to check if our application can meet their needs. This can also test the installation of the software when we run the software on the other computers. This is an ongoing test with each release of our software.
 
 \part{Project Meta-Comment}
 \section{Updates since Interim Report}
@@ -359,21 +522,48 @@ The code has also been vastly improved in terms of efficiency, having completely
 \\
 Overall, in terms of improvements and updates, we have attempted to turn what was effectively a prototype into a finished, complete product.\\
 \section{Time and Planning}
-TO BE COMPLETED
-\section{Problems Encountered}
-TO BE COMPLETED
+At the start of the project we immediately contacted each other via email to meet in order to organise meeting times and to assign roles within the project to each team member. After comparing each other's timetables we agreed to meet 4 times in a week; one 30 minute formal meeting with our supervisor, one 1 hour informal meeting at the beginning of each week to separate tasks for that week and review tasks completed the previous weeks, a 4 hour group working session and a quick 20 minute meeting before our formal meeting with our supervisor. We also agreed early on that the best way to monitor our progress and organise our time would be to create a Gantt chart (See below). \\
+\\
+\includegraphics[scale=0.7, angle=270]{gantt.png}
+\pagebreak
+The first thing we needed to do was create work breakdown structure so we separated tasks into different topics and then created sub-topics for each. Using deadline dates as guidance we made a rough estimate of how long each task will take then broke that down further for each sub topic and finally determined the order of the tasks. There is also a percentage complete column inserted, which was updated regularly so we can view progress on that particular section. We can also see if we are on track to complete each section. Using the Gantt chart we could view the critical path of the project as a whole. Critical path analysis shows an overview of the time-scale of the project - showing us if we are on track to complete the project on time. The critical path allows for slack time, so if a task is taking longer than necessary then it can be compensated as tasks overlap and eventually the critical path is not affected. For each subtopic, tasks were created and placed onto an online Kanban board.\\
+\\
+\begin{center}
+\includegraphics[scale=0.3]{kb.png}
+\textbf{KanBanFlow Main Board}
+\end{center}
+In our 1 hour informal meetings we were all assigned tasks for that week; these tasks were placed on a Kanban board using \cite{kb}. A Kanban board is an electronic board, which contains all the tasks in the product backlog (tasks that need to be completed); each task is separated into different columns, tasks that need to be done, tasks being analysed, tasks in development, tasks being tested or awaiting feedback and finally tasks completed. Each task has a name and description, each type of task is colour coded to correspond to a topic in the Gantt chart and also is an effective way of differentiating between the types of tasks. A team member is assigned to each task and a time estimate is made, when a task is completed the team member responsible fills in the time it took them to complete it. While a task is being done each member can show their progress by moving their task to the appropriate column. Each task has a due date and as it is an interactive board, it sends reminders to your email to tell you a task is due soon. The Kanban board was a very effective way of assigning tasks to each other and also a brilliant overview of the immediate tasks that needed to be completed. By using the Kanban board we were able to create a pert chart using the tasks.\\
+\\
+ A pert chart is similar to a Gantt chart but for a shorter timescale and each task in it is more detailed and specific. By using the tasks on the kanban board, we created a weekly Pert Chart to ensure the weekly tasks were completed and if any task is taking longer than usual then we were able to compensate as a critical path was determined first. As tasks weren’t completed sequentially but in parallel we could allow for slack time as well. Below is a example of the weekly charts we created.\\
+\\
+\includegraphics[scale=0.5]{pert.png}\\
+\\
+We used the tasks that were created at the beginning of the week. The critical path was then identified. The tasks that were on the critical path had to be monitored closely to ensure the successful completion of tasks that week, we did this by keeping in contact daily via Facebook or email or during our weekly group work session. Also during our Monday meetings we reviewed both the pert chart and Kanban boards and checked if we had successfully completed our assigned tasks for that week after this we updated our Gantt to view the overall progress of the project and check if we were on schedule to meet deadlines.\\
 
+
+\section{Problems Encountered}
+Fear of conflict remains to be a constant problem in group working and in our team it was apparent in the early stages of the project. As we were working with each other for the first time nobody wanted to offend each other so opinions on certain matters weren’t challenged and constructive criticism was taken in the wrong way which in turn affected the quality of our initial work. Fear of conflict led to the avoidance of accountability this was because at times the team would refuse to confront difficult issues within the project by avoiding responsibility with the issue at hand and just focus on their given roles. These issues were eradicated with time as the more we worked together the better understanding we had of each other so we were regularly able to provide each other feedback with tasks and also raise any issues if we had any and admit responsibility to some issues . This led to the team being more productive as the focus was working together to produce a high standard of work instead of everyone for their own.\\
+\\
+Working in a team meant that competency levels within the team differed. For example none of the team had considerable experience in testing. As a result some team members were asked to learn more about J-unit testing and begin writing test cases. Our lack of experience was evident as we weren’t sure which parts of the program needed testing, therefore we didn’t have sufficient test cases for our initial prototypes. This made it difficult for our developer’s to see which part of the code had bugs and needed changes, but after advice from our supervisor and increased proficiency in testing our latest prototype had sufficient test cases. Another issue with different competency levels was that some of the team were working considerably more than others, this was apparent when we were assigning tasks at the beginning of the week, lack of commitment was evident as some would avoid taking responsibility for the harder tasks and just take the smaller ones or even take responsibility for the tasks and not produce their work within the given time. By organising a group working session we were able to help each other stick to task deadlines and motivate each other.\\ 
+\\
 \part{Conclusion}
 It is our conviction that we have produced a project of a high quality and high standard. \textit{'HEX'} conforms to, fulfills and arguably exceeds the specification drawn up at the beginning of the project. Not only have we succesfully emulated the reacTogon hardware, but we have also extended it: affording a truly novel musical experience. The success of the software not only lies in the unique, neoteric functionality and experience; but also in the usability and contemporary design of the user interface. These factors coupled with the quality of the codebase, which employs Java best practice and object-oriented design yields a culmination of our efforts and an ultimately successful project.
 
 \section{References}
 \pagebreak
+
 \part{Appendices}
 \bibliographystyle{IEEEtran}
 \bibliography{reportReferences}
 
+\section{Markey Research Survey}
+To be insterted.
+
+\pagebreak
 \section{Software Instruction Manual}
-TO BE COMPLETED
+TO BE INSERTED SEPARATELY
+
+\pagebreak
 \section{Weekly Formal Meeting Minutes}
-TO BE COMPLETED
+TO BE INSERTED
 \end{document}
