@@ -43,7 +43,7 @@ M.~Kaltenbrunner, ``Tangible musical interfaces,'' 2013. [Online]. Available:
 \bibitem{randomalg}
 \BIBentryALTinterwordspacing
  [Online]. Available:
-  \url{http://www.blabbermouth.net/news.aspx?mode=Article&newsitemID=124671}
+  \url{http://www.blabbermouth.net/news.aspx?mode=ArticlenewsitemID=124671}
 \BIBentrySTDinterwordspacing
 
 \bibitem{amidiomanual}
@@ -78,13 +78,33 @@ ri-on/tnr-o/?mode=model}
 \bibitem{koch}
 H.~C. Koch, \emph{Musikalisches Lexicon}, 1865.
 
+\bibitem{swift}
+\BIBentryALTinterwordspacing
+A.~Swift, ``An introduction to midi,'' 1997. [Online]. Available:
+  \url{http://www.doc.ic.ac.uk/~nd/surprise_97/journal/vol1/aps2/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{brewster}
+S.~Brewster, ``Nonspeech auditory output. in: The human-computer interaction
+  handbook: Fundamentals, evolving technologies, and emerging applications.''
+  2003.
+
 \bibitem{Huber}
 D.~M. Huber, ``The midi manual,'' 1991.
+
+\bibitem{midinope}
+\BIBentryALTinterwordspacing
+ [Online]. Available:
+  \url{http://blog.umito.nl/2010/05/07/midi-on-android.html}
+\BIBentrySTDinterwordspacing
 
 \bibitem{hashm}
 \BIBentryALTinterwordspacing
  [Online]. Available: \url{http://en.wikipedia.org/wiki/Hash_Maps}
 \BIBentrySTDinterwordspacing
+
+\bibitem{stein}
+C.~Stein, ``Introduction to algorithms,'' 2001.
 
 \bibitem{grids}
 \BIBentryALTinterwordspacing

@@ -17,39 +17,39 @@
 \contentsline {section}{\numberline {3}Requirements Specification}{9}
 \contentsline {subsection}{\numberline {3.1}Functional Requirements}{9}
 \contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{11}
-\contentsline {part}{II\hspace {1em}Design}{11}
-\contentsline {section}{\numberline {4}Software Design}{11}
-\contentsline {subsection}{\numberline {4.1}The Grids}{11}
-\contentsline {subsection}{\numberline {4.2}Pulse}{11}
-\contentsline {subsection}{\numberline {4.3}Tiles}{12}
-\contentsline {subsection}{\numberline {4.4}Keeping Time}{12}
-\contentsline {subsection}{\numberline {4.5}Creation of Sound}{13}
-\contentsline {section}{\numberline {5}User Interface Designs}{13}
-\contentsline {part}{III\hspace {1em}Implementation}{16}
-\contentsline {section}{\numberline {6}Key Control Elements, Data Structures and Methods}{17}
-\contentsline {subsection}{\numberline {6.1}Removal of Duplicates}{17}
-\contentsline {subsection}{\numberline {6.2}Timing and Tempo}{17}
-\contentsline {subsubsection}{\numberline {6.2.1}\textit {play()} method Implementation}{18}
-\contentsline {subsection}{\numberline {6.3}Transposition}{18}
-\contentsline {subsubsection}{\numberline {6.3.1}Transposition Formula}{18}
-\contentsline {subsection}{\numberline {6.4}Sound Production}{18}
-\contentsline {section}{\numberline {7}Code Plan}{20}
-\contentsline {section}{\numberline {8}Testing}{21}
-\contentsline {subsection}{\numberline {8.1}Unit Testing}{21}
-\contentsline {subsection}{\numberline {8.2}Functional Testing}{21}
-\contentsline {subsubsection}{\numberline {8.2.1}User Interface Testing Example}{22}
-\contentsline {subsection}{\numberline {8.3}Performance Testing}{22}
-\contentsline {subsubsection}{\numberline {8.3.1}Stress Testing}{22}
-\contentsline {subsubsection}{\numberline {8.3.2}Compatability Testing}{23}
-\contentsline {subsubsection}{\numberline {8.3.3}Usability Testing}{23}
-\contentsline {subsubsection}{\numberline {8.3.4}Acceptance Testing}{23}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{23}
-\contentsline {section}{\numberline {9}Updates since Interim Report}{23}
-\contentsline {section}{\numberline {10}Time and Planning}{24}
-\contentsline {section}{\numberline {11}Problems Encountered}{27}
-\contentsline {part}{V\hspace {1em}Conclusion}{28}
-\contentsline {section}{\numberline {12}References}{28}
-\contentsline {part}{VI\hspace {1em}Appendices}{29}
-\contentsline {section}{\numberline {13}Markey Research Survey}{29}
-\contentsline {section}{\numberline {14}Software Instruction Manual}{30}
-\contentsline {section}{\numberline {15}Weekly Formal Meeting Minutes}{31}
+\contentsline {part}{II\hspace {1em}Design}{12}
+\contentsline {section}{\numberline {4}Software Design}{12}
+\contentsline {subsection}{\numberline {4.1}The Grids}{12}
+\contentsline {subsection}{\numberline {4.2}Pulse}{12}
+\contentsline {subsection}{\numberline {4.3}Tiles}{13}
+\contentsline {subsection}{\numberline {4.4}Keeping Time}{13}
+\contentsline {subsection}{\numberline {4.5}Creation of Sound}{14}
+\contentsline {section}{\numberline {5}User Interface Designs}{14}
+\contentsline {part}{III\hspace {1em}Implementation}{17}
+\contentsline {section}{\numberline {6}Key Control Elements, Data Structures and Methods}{18}
+\contentsline {subsection}{\numberline {6.1}Removal of Duplicates}{18}
+\contentsline {subsection}{\numberline {6.2}Timing and Tempo}{18}
+\contentsline {subsubsection}{\numberline {6.2.1}\textit {play()} method Implementation}{19}
+\contentsline {subsection}{\numberline {6.3}Transposition}{19}
+\contentsline {subsubsection}{\numberline {6.3.1}Transposition Formula}{19}
+\contentsline {subsection}{\numberline {6.4}Sound Production}{19}
+\contentsline {section}{\numberline {7}Code Plan}{21}
+\contentsline {section}{\numberline {8}Testing}{22}
+\contentsline {subsection}{\numberline {8.1}Unit Testing}{22}
+\contentsline {subsection}{\numberline {8.2}Functional Testing}{22}
+\contentsline {subsubsection}{\numberline {8.2.1}User Interface Testing Example}{23}
+\contentsline {subsection}{\numberline {8.3}Performance Testing}{23}
+\contentsline {subsubsection}{\numberline {8.3.1}Stress Testing}{23}
+\contentsline {subsubsection}{\numberline {8.3.2}Compatability Testing}{24}
+\contentsline {subsubsection}{\numberline {8.3.3}Usability Testing}{24}
+\contentsline {subsubsection}{\numberline {8.3.4}Acceptance Testing}{24}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{25}
+\contentsline {section}{\numberline {9}Updates since Interim Report}{25}
+\contentsline {section}{\numberline {10}Time and Planning}{25}
+\contentsline {section}{\numberline {11}Problems Encountered}{28}
+\contentsline {part}{V\hspace {1em}Conclusion}{29}
+\contentsline {section}{\numberline {12}References}{29}
+\contentsline {part}{VI\hspace {1em}Appendices}{30}
+\contentsline {section}{\numberline {13}Markey Research Survey}{30}
+\contentsline {section}{\numberline {14}Software Instruction Manual}{31}
+\contentsline {section}{\numberline {15}Weekly Formal Meeting Minutes}{32}

@@ -141,20 +141,19 @@ Hash maps are a data structure that use a hash function to generate unique keys 
 \\
 The hash function will assign each possible key to a unique location. This property of hash maps ensures that no two pulses occupy the same space on the grid. Our method of collision resolution is to simply overwrite keys in the event of a collision. This removes the need for advanced collision resolution algorithms such as \textit{Separate chaining} or \textit{Open addressing}. As such, the access time of the hash map will always be constant: affording an access time of $ O(1) $ for insert, search and delete methods \cite{stein}. Of course we will need an array to keep track of the keys in use.\\
 \\
-To create the perfect hash function we will have to make sure there are no unwanted collisions, some sort of hashing function in base 6 will probably need to be use due to the fact that hexagons are 6 sided are in a grid. \\
+To create the perfect hash function it is necessary to ensure there are no \textit{unwanted} collisions; collisions that occur with pulses in different locations on the grid. Some sort of hashing function in base 6 to take advantage of the senary properties of hexagons.\\
 
 \subsubsection{Working With Hexagons}
-The immediate area of research, on beginning coding was how to generate and work with a grid of hexagons. There are few operations one might need to perform: finding hexagon's position by its index in the grid; picking a hexagon by mouse; finding neighbour cells; finding hexagon's corner coordinates etc.\\
+There are several operations one might need to perform when working with hexagons: finding a hexagon's position by its index in the grid; picking a hexagon by mouse; finding neighbour cells; finding hexagon's corner coordinates etc.\\
 
 \begin{center}
 \includegraphics[scale=1]{diag1.png}\\
 \end{center}
-
 Using simple properties of hexagons, as shown in \textit{Fig. 1}, we are able to derive useful methods of manipulating and arranging them, and produce relevant algorithms for use in our code. \\
 \\
 We define the hexagon by its radius R, and find some other parameters based on it, such as W ("width"), S ("side") and H ("height"). We can calculate W,S,H easily with a known R.\\
 \\
-Hexagon grids can be derived from square grids. Since coordinate systems for squares are much easier, the derivation will guide us in designing coordinate systems for hexagons\cite{grids}. To turn a square grid into a hexagon grid, there are two steps needed. First, we must offset the columns (or rows). Second, we should split half the square edges and bend them in the middle.
+Hexagon grids can be derived from square grids. Since coordinate systems for squares are much easier, the derivation will guide us in designing coordinate systems for hexagons \cite{grids}. To turn a square grid into a hexagon grid, there are two steps needed. First, we must offset the columns (or rows). Second, we should split half the square edges and bend them in the middle.
 \begin{center}
 \includegraphics[scale=0.5]{image11.jpg}\\
 \end{center}
@@ -170,8 +169,9 @@ From the picture above, we can figure out the formula for finding position of th
 \includegraphics[scale=0.5]{image16.png}\\
 \end{center}
 With this knowledge we are now able to perform basic the operations and manipulations with hexagons necessary for use in our software.
+
 \section{Requirements Specification}
-Our project has several important key features which need to be followed and implemented; they can be described in the functional, in other words, definitions of what the system must do; and non-functional requirements, definitions of how the system is supposed to be. These are detailed henceforth:
+Details of key features to be required can be described in terms of the functional requirements, in other words, definitions of what the system must do; and non-functional requirements, definitions of how the system is supposed to be. These are detailed henceforth:
 \subsection{Functional Requirements}
 \begin{enumerate}
 
@@ -180,11 +180,13 @@ Our project has several important key features which need to be followed and imp
 \item It must be possible to manipulate the sound through variation of voice/MIDI instrument.
 \end{enumerate}
 
-\item The application must implement the Harmonic Table in the layout of playable notes.
+\item The application must implement the Harmonic Table (see musical research for more) in the layout of playable notes.
 \begin{enumerate}
 \item The notes must be set out on a grid of contiguous hexagons.
 \item Moving immediately up a hexagon will increase the pitch by an interval of a 5th and vice versa.
 \item Moving immediately right a hexagon will increase the pitch by a semitone and vice versa.
+\item Moving in a north easterly direction on the grid will increase the pitch by a major third, i.e. 4 semitones.
+\item Moving an a north westerly direction on the grid will increase the pitch by a minor third, i.e. 3 semitones.
 \end{enumerate}
 
 \item `Operator tiles' should be placed on individual hexagons within the grid to manipulate sound in various ways.
@@ -192,7 +194,7 @@ Our project has several important key features which need to be followed and imp
 \item The following operator tiles should be implemented:
 \begin{enumerate}
 \item \textit{Play} - Begins the sequencer, sending an initial pulse in a straight line in a specified direction.
-\item \textit{Stop} - Stops and `absorbs' the pulse at that position.
+\item \textit{Stop} - Stops and 'absorbs' the pulse at that position.
 \item \textit{Change} - Changes the direction of the pulse.
 \item \textit{Explode} - Causes the pulse to 'split', propagating new playheads from each edge of the hexagon it is placed on, but not going back on itself.
 \item \textit{Warp} - When the playhead meets a warp tile, it will spawn new playheads at each other warp tile placed on the grid, moving in the direction of entry. 
@@ -203,7 +205,7 @@ Our project has several important key features which need to be followed and imp
 \item A global base tempo must be set.
 \item Tempos on each grid can be set independently.
 \begin{enumerate}
-\item Individual grid tempos must be a multiple of two, relative to one another.
+\item Individual grid tempos must be a multiple of two, relative to one another (i.e. grids can be twice, four times, eight or sixteen times faster than the base).
 \end{enumerate}
 \end{enumerate}
 
@@ -220,22 +222,22 @@ Our project has several important key features which need to be followed and imp
 
 \item Operator tiles should be removed with a delete mechanism.
 \begin{enumerate}
-\item When a `delete' key is depressed, a click must remove a tile from the grid.
-\item There must be a `clear' button to remove all tiles from an individual grid.
+\item When a 'delete' key is depressed, a click must remove a tile from the grid.
+\item There must be a 'clear' button to remove all tiles from an individual grid.
 \end{enumerate}
 
-\item The following operator tiles must be able to rotate when placed in order to send the playhead in different directions:
+\item The following operator tiles sould be rotatable when placed such that they will send the playhead in different directions:
 \begin{enumerate}
 \item \textit{Play}
 \item \textit{Change}
 \end{enumerate}
 
-\item Six grids should be implemented for use in harmonic, polyphonic projects.
+\item Six layers should be implemented for use in harmonic, polyphonic projects.
 \begin{enumerate}
-\item Grids must be independent.
-\item Different tiles must be able to be placed on different grids.
+\item Layers must be independent.
+\item It must be possible to place different tiles on different grids (i.e. all grids can be unique).
 \item Each grid must be able to have it's own tempo.
-\item Grids must be able to be played simultaneously.
+\item Layers must be able to be played simultaneously.
 \end{enumerate}
 
 \item Global `Start' and `Stop' buttons should be implemented to start and stop playheads over all grids.
@@ -277,20 +279,19 @@ Our application is aimed to be used by a wide variety of people, with varying le
 \item Usability - the application should be easy to use and have simple, intuitive user input.
 \end{enumerate}
 
+\pagebreak
 \part{Design}
 \section{Software Design}
 We looked at the Reactogon and decided to expand upon it, please look at the functional requirements for this.
 \subsection{The Grids}
-Our software would comprise of 6 layers; each layer being a grid. Each grid would have to be unique yet have different properties; this was the first clue to using OO design. Each grid would have a set of properties, these properties being:
+Our software will comprise of 6 layers; each layer being a grid. Each grid would have to be unique yet have different properties; this was the first indication that the object-oriented paradigm was suitable for our codebase. Each grid would have a set of properties, these properties being:
 \begin{itemize}
-\item Each grid could be assigned a unique instrument, but needs to support changing it on the go during mid play. This suggested that a grid could be assigned its own channel in a MIDI sequencer. (Rees, 2001)
-
-\item Each grid could support different octaves, through the research we found that MIDI can play 127 different notes ranging from octaves 0 to 10, our grids therefore need to be able to be transposed mid session. This suggests that each grid have a starting note and some sort of algorithm then fills the grids with correct notes.\\
-\\
-The tempo of the grid should be changeable, but all grids needs to have some sort of relation to each other, so some sort of base tempo needs to be applied, then each grid can then play at $ 1 \times , \frac{1}{2}, \frac{1}{4}, \frac{1}{8}$ or $\frac{1}{16} $ times that pace, these values were chosen due to the research in music theory. This implies that a grid can be halted for set amount of time/tick.
+\item Each grid will be assigned a unique instrument, but needs to support changing dynamically, mid play. This suggested that a grid should be assigned its own channel in a MIDI sequencer \cite{rees}.
+\item Each grid can be dynamically transposed --- supporting different octaves, through the research we found that MIDI can play 127 different notes ranging from octaves 0 to 10 \cite{swift}. This suggests that each grid should have a starting note and some sort of algorithm then fills the grids with correct notes.\\
+The tempo of the grid will be changeable, but all grids must have synchronisable tempos based on a global base tempo. Grids can then play at $ 1 \times , \frac{1}{2}, \frac{1}{4}, \frac{1}{8}$ or $\frac{1}{16} $ times the base pace, these values were chosen due to the research in music theory. This implies that a grid can be halted for set amount of time/tick.
 \end{itemize}
 
-The grid itself would be made up of hexagonal `cells’, these should hold information about what note each cell is, this could simply be a number. From this it would be sensible to store the cells as a 2D array. As discussed above this would then make it quite simple to transpose notes with an algorithm. Information about where it should be placed in the grid itself. Some of the properties of hexagons are outlined in the research and will help for placement and using hexagon properties to our advantage. Because this is quite a visual piece of software some information needs to be held about its state, as we wanted to show if a cell is active or not.
+The grid itself would be made up of hexagonal 'cells’, these should hold information about what note each cell is, this could simply be a number. From this it would be sensible to store the cells as a 2D array. As discussed abovlle this would then make it quite simple to transpose notes with an algorithm. Information about where it should be placed in the grid itself. Some of the properties of hexagons are outlined in the research and will help for placement and using hexagon properties to our advantage. Because this is quite a visual piece of software some information needs to be held about its state, as we wanted to show if a cell is active or not.
 
 \subsection{Pulse}
 The vision of a pulse is some sort of object moving through the grid, from cell to cell. The pulse itself should be quite simple as all it must do is move from one cell to another. The tempo of the grid should manipulate how fast the pulse moves from one to another. The grid must be able to support multiple pulses, all moving in different directions at the same time. As well as this, pulses must not affect one and other, crossing/colliding pulses shouldn't be a problem and the software must be able to handle this. But the software must be able to handle pulses that occupy the same space, as not to create exponential loops see figure 1. When a pulse comes into contact with a tile it should affect the pulse in some way.
@@ -510,6 +511,7 @@ The second one is to test the emotional response. It is to check if the user int
 
 \subsubsection{Acceptance Testing}
 The acceptable tests are conducted, evaluated by users. So we ask some other people to use our application, ask them to check if our application can meet their needs. This can also test the installation of the software when we run the software on the other computers. This is an ongoing test with each release of our software.
+\pagebreak
 
 \part{Project Meta-Comment}
 \section{Updates since Interim Report}
@@ -525,6 +527,7 @@ At the start of the project we immediately contacted each other via email to mee
 \\
 \includegraphics[scale=0.7, angle=270]{gantt.png}
 \pagebreak
+\\
 The first thing we needed to do was create work breakdown structure so we separated tasks into different topics and then created sub-topics for each. Using deadline dates as guidance we made a rough estimate of how long each task will take then broke that down further for each sub topic and finally determined the order of the tasks. There is also a percentage complete column inserted, which was updated regularly so we can view progress on that particular section. We can also see if we are on track to complete each section. Using the Gantt chart we could view the critical path of the project as a whole. Critical path analysis shows an overview of the time-scale of the project - showing us if we are on track to complete the project on time. The critical path allows for slack time, so if a task is taking longer than necessary then it can be compensated as tasks overlap and eventually the critical path is not affected. For each subtopic, tasks were created and placed onto an online Kanban board.\\
 \\
 \begin{center}
@@ -547,18 +550,18 @@ Working in a team meant that competency levels within the team differed. For exa
 \\
 \part{Conclusion}
 It is our conviction that we have produced a project of a high quality and high standard. \textit{'HEX'} conforms to, fulfills and arguably exceeds the specification drawn up at the beginning of the project. Not only have we succesfully emulated the reacTogon hardware, but we have also extended it: affording a truly novel musical experience. The success of the software not only lies in the unique, neoteric functionality and experience; but also in the usability and contemporary design of the user interface. These factors coupled with the quality of the codebase, which employs Java best practice and object-oriented design yields a culmination of our efforts and an ultimately successful project.
-
 \section{References}
+\bibliographystyle{IEEEtran}
+\bibliography{reportReferences}
 \pagebreak
 
 \part{Appendices}
-\bibliographystyle{IEEEtran}
-\bibliography{reportReferences}
+
 
 \section{Markey Research Survey}
 To be insterted.
-
 \pagebreak
+
 \section{Software Instruction Manual}
 TO BE INSERTED SEPARATELY
 

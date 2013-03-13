@@ -7,14 +7,6 @@ You're missing a field part---line 8 of file reportReferences.bib
  :    year = 
  :           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 55 of file reportReferences.bib
- : @article{randomalg
- :                   ,
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 102 of file reportReferences.bib
- : @article{
- :          
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -52,11 +44,18 @@ Warning--empty title in cthru
 Warning--empty journal in cthru
 Warning--empty year in cthru
 Warning--missing publisher in koch
+Warning--empty journal in swift
+Warning--empty journal in brewster
 Warning--empty journal in Huber
+Warning--empty author in midinope
+Warning--empty title in midinope
+Warning--empty journal in midinope
+Warning--empty year in midinope
 Warning--empty author in hashm
 Warning--empty title in hashm
 Warning--empty journal in hashm
 Warning--empty year in hashm
+Warning--empty journal in stein
 Warning--empty author in grids
 Warning--empty title in grids
 Warning--empty journal in grids
@@ -72,45 +71,45 @@ Warning--empty journal in kb
 Warning--empty year in kb
 
 Done.
-You've used 16 entries,
+You've used 20 entries,
             4039 wiz_defined-function locations,
-            855 strings with 8343 characters,
-and the built_in function-call counts, 4107 in all, are:
-= -- 205
-> -- 28
+            871 strings with 8728 characters,
+and the built_in function-call counts, 5293 in all, are:
+= -- 289
+> -- 41
 < -- 0
-+ -- 20
-- -- 4
-* -- 284
-:= -- 724
-add.period$ -- 19
-call.type$ -- 16
-change.case$ -- 3
++ -- 27
+- -- 7
+* -- 339
+:= -- 955
+add.period$ -- 26
+call.type$ -- 20
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 404
-empty$ -- 438
-format.name$ -- 4
-if$ -- 780
+cite$ -- 79
+duplicate$ -- 518
+empty$ -- 556
+format.name$ -- 7
+if$ -- 1020
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 68
-newline$ -- 97
-num.names$ -- 4
-pop$ -- 275
+int.to.str$ -- 20
+missing$ -- 87
+newline$ -- 113
+num.names$ -- 7
+pop$ -- 337
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 286
+skip$ -- 377
 stack$ -- 0
-substring$ -- 3
-swap$ -- 126
+substring$ -- 6
+swap$ -- 172
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 16
-warning$ -- 52
-while$ -- 4
-width$ -- 18
-write$ -- 137
-(There were 3 error messages)
+type$ -- 20
+warning$ -- 59
+while$ -- 7
+width$ -- 22
+write$ -- 168
+(There was 1 error message)
