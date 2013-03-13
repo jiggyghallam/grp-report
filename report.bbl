@@ -40,6 +40,12 @@ M.~Kaltenbrunner, ``Tangible musical interfaces,'' 2013. [Online]. Available:
 715?mt=8}
 \BIBentrySTDinterwordspacing
 
+\bibitem{randomalg}
+\BIBentryALTinterwordspacing
+ [Online]. Available:
+  \url{http://www.blabbermouth.net/news.aspx?mode=Article&newsitemID=124671}
+\BIBentrySTDinterwordspacing
+
 \bibitem{amidiomanual}
 \BIBentryALTinterwordspacing
  [Online]. Available:
@@ -68,6 +74,9 @@ ri-on/tnr-o/?mode=model}
 \BIBentryALTinterwordspacing
  [Online]. Available: \url{http://www.c-thru-music.com/cgi/?page=spec-64}
 \BIBentrySTDinterwordspacing
+
+\bibitem{koch}
+H.~C. Koch, \emph{Musikalisches Lexicon}, 1865.
 
 \bibitem{Huber}
 D.~M. Huber, ``The midi manual,'' 1991.

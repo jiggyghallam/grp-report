@@ -42,7 +42,7 @@ The \textit{`ReacTogon`}\cite{modin} is a concept instrument produced by Mark Bu
 \end{center}
 
 \subsection{Project Description}
-Our project, branded \textit{`HEX’}, aims to emulate and extend the ReacTogon concept. Through the production of a software system that implements the harmonic table within the framework of a pattern based sequencer, we aim to provide a completely novel musical experience.\\
+Our project, branded \textit{'HEX'}, aims to emulate and extend the ReacTogon concept. Through the production of a software system that implements the harmonic table within the framework of a pattern based sequencer, we aim to provide a completely novel musical experience.\\
 \\
 To this end, we have written a Java application that implements the harmonic table in this way. Control is provided through the use of five counters or 'operator tiles' that are placed onto the grid, namely Play, Stop, Change direction, Explode and Warp. The latter four have active and inactive states that dictate whether they play a note or not during an interaction. In addition to this, there are buttons and sliders to change tempo and instrument. There are also multiple layers of grids, set out in tabs, for the creation of harmony and a multi textured, polyphonic composition.\\
 \\
@@ -103,7 +103,6 @@ We conducted a survey (attached in appendices) targeting general music enthusias
 \includegraphics[scale=0.5]{5.png}
 \end{center}
 In musical theory, an interval is the distance between two notes or pitches, the degree of highness or lowness of a note --- based on it's frequency. Typically, these are represented with tones and semitones, where tones are the base unit of an interval. Certain intervals appear particularly often within music composition as they can provide key melodies. Such intervals include the perfect fifth, and major and minor thirds. These intervals, which are 7, 4 and 3 semitones above the base note respectively, make up the notes used in major and minor triads and are the intervals used in the harmonic table based on the following set of rules:\\
-\\
 \begin{itemize}
 \item Notes ascend by an interval of a fifth on the vertical axis.
 \item Notes ascend by an interval of a major third on one diagonal axis (north easterly).
@@ -111,37 +110,36 @@ In musical theory, an interval is the distance between two notes or pitches, the
 \end{itemize}
 This layout clusters complementary notes together, for example, all the notes in the C Major chord, namely C, E and G are adjoining. Scales are played by using simple, repeated patterns that can be transposed for playing in different keys. \\
 \\
-Transposition, \textit{the shifting of a melody, a harmonic progression or entire musical piece to another key, while maintaining the same tone structure} \cite{koch}, 
+Transposition, \textit{the shifting of a melody, a harmonic progression or entire musical piece to another key, while maintaining the same tone structure} \cite{koch}, can be done far more easily on a harmonic keyboard than on a conventional keyboard as the basic pattern is always retained. This is shown in a comparison between the C and G major scale below:
+\pagebreak
+\begin{center}
+\includegraphics[scale=0.7]{scale.png}
+\hspace{10pt}
+\includegraphics[scale=0.5]{scale3.png}\\
+\textbf{The C Major scale (left) cf. the G Major scale (right). \\ Note the same progression.}\\
 \includegraphics[scale=0.7]{scale.png}
 \includegraphics[scale=1.5]{scale2.jpg}
 \end{center}
 Above is shown a comparison of the C major scale played on a harmonic table based keyboard (left) and on a conventional piano keyboard (right). The progression is enumerated from 1 to 8.\\
-\\
-Scales and triads can be transposed far more easily on a harmonic keyboard than on a conventional keyboard as the basic pattern is always retained. This is shown in the G major scale below:
-\begin{center}
-\includegraphics[scale=0.5]{scale3.png}
-\end{center}
 
 \subsection{Technical Research}
 \subsubsection{MIDI}
-MIDI, short for Musical Instrument Digital Interface is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another. (Swift, 1997). A link in MIDI can handle 16 channels of information.\\
+MIDI, short for Musical Instrument Digital Interface is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another \cite{swift}. A link in MIDI can handle 16 channels, routes of communication, to transmit information.\\
 \\
-MIDI uses messages containing instruction which controls a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters (Brewster, 2003). Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
+MIDI uses messages containing instructions which controls a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters \cite{brewster}. Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
 \\
-Messages send data in real time over a single channel. Examples include\cite{Huber}:
+The main types of messages sent, in real time, over a single channel include \cite{Huber}:
 \begin{itemize}
 \item Note on messages: Specify a notes, volume (velocity), note, pitch and the channel it should be played on.
 \item Note off messages: Same of note on, but turns off a note.
 \item Control change messages: Changes instrument settings.
 \end{itemize}
-From this research we were able to get a full grasp of MIDI and learned that we could set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change (instrument)” and “note-off” messages. One slight disappointment we found when researching MIDI was (at the time of the research) android devices did not fully support MIDI. 
+This research gave us a grounding in MIDI; learning that it was possible to set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change [instrument]” and “note-off” messages. These factors can help in emulating interesting features of existing products. One slight disappointment we found when researching MIDI was (at the time of the research) Android devices did not fully support MIDI \cite{midinope}. 
 
 \subsubsection{Hash Maps}
-Hash map is a data structure that uses a hash function to map identifying values using a key. A key is made using a hash function that will index directly into the correct position, where the correct value will be found\cite{hashm}.\\
+Hash maps are a data structure that use a hash function to generate unique keys for identifying values within a table. A key is made using a hash function that will index directly into the correct position, where the requested value will be found \cite{hashm}.\\
 \\
-Ideally, the hash function should assign each possible key to a unique location; we will take advantage of this feature to make sure no duplicate values pulses occupy the same space in the grid.\\
-\\
-Because we will not be taking advantage of any algorithms to deal with collision resolution, such as Separate chaining or Open addressing the access time of the hash map will always be constant. Giving insert, search and delete a O(1) access time (Stein, 2001), which is very fast. Of course we will need an array to keep track of the keys in use.\\
+The hash function will assign each possible key to a unique location. This property of hash maps ensures that no two pulses occupy the same space on the grid. Our method of collision resolution is to simply overwrite keys in the event of a collision. This removes the need for advanced collision resolution algorithms such as \textit{Separate chaining} or \textit{Open addressing}. As such, the access time of the hash map will always be constant: affording an access time of $ O(1) $ for insert, search and delete methods \cite{stein}. Of course we will need an array to keep track of the keys in use.\\
 \\
 To create the perfect hash function we will have to make sure there are no unwanted collisions, some sort of hashing function in base 6 will probably need to be use due to the fact that hexagons are 6 sided are in a grid. \\
 

@@ -7,6 +7,14 @@ You're missing a field part---line 8 of file reportReferences.bib
  :    year = 
  :           ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 55 of file reportReferences.bib
+ : @article{randomalg
+ :                   ,
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 102 of file reportReferences.bib
+ : @article{
+ :          
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -19,6 +27,10 @@ Warning--empty author in jrhexitunes
 Warning--empty title in jrhexitunes
 Warning--empty journal in jrhexitunes
 Warning--empty year in jrhexitunes
+Warning--empty author in randomalg
+Warning--empty title in randomalg
+Warning--empty journal in randomalg
+Warning--empty year in randomalg
 Warning--empty author in amidiomanual
 Warning--empty title in amidiomanual
 Warning--empty journal in amidiomanual
@@ -39,6 +51,7 @@ Warning--empty author in cthru
 Warning--empty title in cthru
 Warning--empty journal in cthru
 Warning--empty year in cthru
+Warning--missing publisher in koch
 Warning--empty journal in Huber
 Warning--empty author in hashm
 Warning--empty title in hashm
@@ -59,45 +72,45 @@ Warning--empty journal in kb
 Warning--empty year in kb
 
 Done.
-You've used 14 entries,
+You've used 16 entries,
             4039 wiz_defined-function locations,
-            849 strings with 8214 characters,
-and the built_in function-call counts, 3553 in all, are:
-= -- 174
-> -- 23
+            855 strings with 8343 characters,
+and the built_in function-call counts, 4107 in all, are:
+= -- 205
+> -- 28
 < -- 0
-+ -- 17
-- -- 3
-* -- 255
-:= -- 631
-add.period$ -- 17
-call.type$ -- 14
++ -- 20
+- -- 4
+* -- 284
+:= -- 724
+add.period$ -- 19
+call.type$ -- 16
 change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 354
-empty$ -- 369
-format.name$ -- 3
-if$ -- 663
+cite$ -- 68
+duplicate$ -- 404
+empty$ -- 438
+format.name$ -- 4
+if$ -- 780
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 59
-newline$ -- 89
-num.names$ -- 3
-pop$ -- 242
+int.to.str$ -- 16
+missing$ -- 68
+newline$ -- 97
+num.names$ -- 4
+pop$ -- 275
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 239
+skip$ -- 286
 stack$ -- 0
 substring$ -- 3
-swap$ -- 106
+swap$ -- 126
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 14
-warning$ -- 47
-while$ -- 3
-width$ -- 16
-write$ -- 123
-(There was 1 error message)
+type$ -- 16
+warning$ -- 52
+while$ -- 4
+width$ -- 18
+write$ -- 137
+(There were 3 error messages)
