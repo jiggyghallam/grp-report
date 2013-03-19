@@ -7,15 +7,15 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Examples of Existing Software Systems}{4}
 \contentsline {subsubsection}{\numberline {2.1.2}Examples of Existing Hardware Systems}{4}
 \contentsline {subsection}{\numberline {2.2}Systems Research Evaluation}{5}
-\contentsline {subsection}{\numberline {2.3}Market Research}{6}
-\contentsline {subsection}{\numberline {2.4}Music Research}{6}
-\contentsline {subsection}{\numberline {2.5}Technical Research}{7}
-\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{7}
-\contentsline {subsubsection}{\numberline {2.5.2}Hash Maps}{7}
-\contentsline {subsubsection}{\numberline {2.5.3}Working With Hexagons}{8}
+\contentsline {subsection}{\numberline {2.3}Market Research}{7}
+\contentsline {subsection}{\numberline {2.4}Music Research}{7}
+\contentsline {subsection}{\numberline {2.5}Technical Research}{8}
+\contentsline {subsubsection}{\numberline {2.5.1}MIDI}{8}
+\contentsline {subsubsection}{\numberline {2.5.2}Hash Maps}{8}
+\contentsline {subsubsection}{\numberline {2.5.3}Working With Hexagons}{9}
 \contentsline {subsubsection}{\numberline {2.5.4}Identifying Hexagons}{9}
-\contentsline {section}{\numberline {3}Requirements Specification}{9}
-\contentsline {subsection}{\numberline {3.1}Functional Requirements}{9}
+\contentsline {section}{\numberline {3}Requirements Specification}{10}
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{10}
 \contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{11}
 \contentsline {part}{II\hspace {1em}Design}{12}
 \contentsline {section}{\numberline {4}Software Design}{12}
@@ -40,21 +40,23 @@
 \contentsline {section}{\numberline {9}Testing}{24}
 \contentsline {subsection}{\numberline {9.1}Unit Testing}{24}
 \contentsline {subsection}{\numberline {9.2}Functional Testing}{24}
-\contentsline {subsubsection}{\numberline {9.2.1}User Interface Testing Example}{25}
+\contentsline {subsubsection}{\numberline {9.2.1}User Interface Testing}{25}
 \contentsline {subsection}{\numberline {9.3}Performance Testing}{25}
 \contentsline {subsubsection}{\numberline {9.3.1}Stress Testing}{25}
-\contentsline {subsubsection}{\numberline {9.3.2}Compatability Testing}{26}
-\contentsline {subsubsection}{\numberline {9.3.3}Usability Testing}{26}
-\contentsline {subsubsection}{\numberline {9.3.4}Acceptance Testing}{26}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{28}
-\contentsline {section}{\numberline {10}Updates since Interim Report}{28}
-\contentsline {section}{\numberline {11}Time and Planning}{28}
-\contentsline {section}{\numberline {12}Problems Encountered}{31}
-\contentsline {part}{V\hspace {1em}Conclusion}{33}
-\contentsline {section}{\numberline {13}Project Evaluation}{33}
-\contentsline {section}{\numberline {14}Conclusion}{33}
-\contentsline {part}{VI\hspace {1em}References}{34}
-\contentsline {part}{VII\hspace {1em}Appendix}{35}
-\contentsline {section}{\numberline {15}Market Research Surveys}{35}
-\contentsline {section}{\numberline {16}Software Instruction Manual}{36}
-\contentsline {section}{\numberline {17}Weekly Formal Meeting Minutes}{37}
+\contentsline {subsubsection}{\numberline {9.3.2}Compatability Testing}{25}
+\contentsline {subsubsection}{\numberline {9.3.3}Usability Testing}{25}
+\contentsline {subsubsection}{\numberline {9.3.4}Acceptance Testing}{25}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{27}
+\contentsline {section}{\numberline {10}Updates since Interim Report}{27}
+\contentsline {section}{\numberline {11}Time and Planning}{27}
+\contentsline {section}{\numberline {12}Problems Encountered}{30}
+\contentsline {part}{V\hspace {1em}Conclusion}{32}
+\contentsline {section}{\numberline {13}Project Evaluation}{32}
+\contentsline {section}{\numberline {14}Conclusion}{32}
+\contentsline {part}{VI\hspace {1em}References}{33}
+\contentsline {part}{VII\hspace {1em}Appendix}{34}
+\contentsline {section}{\numberline {15}Additional Testing}{34}
+\contentsline {subsubsection}{\numberline {15.0.5}User Interface Testing Example}{34}
+\contentsline {section}{\numberline {16}Market Research Surveys}{35}
+\contentsline {section}{\numberline {17}Software Instruction Manual}{38}
+\contentsline {section}{\numberline {18}Weekly Formal Meeting Minutes}{39}

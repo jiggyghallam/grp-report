@@ -10,7 +10,7 @@
 \begin{document}
 
 \begin{titlepage}
-\title{G52GRP Interim Group Report\\HEX - A Chain Reactive Music Generator }
+\title{G52GRP Final Group Report\\HEX - A Chain Reactive Music Generator }
 \author{Group NHN2}
 \date{22nd March 2013}
 \maketitle
@@ -56,7 +56,7 @@ Our software is designed with a PC and touch screen in mind, as the tactile natu
 \begin{enumerate}
 \item \textbf{JR Hexatone Pro}
 \begin{center}
-\includegraphics[scale=0.35]{2.jpg}
+\includegraphics[scale=0.35]{2.jpg}\\
 \textbf{The Hexatone Pro;\\ the main board of which is a harmonic table.}
 \end{center}
 The JR Hexatone Pro is an application developed by Amidio for iOS that implements the harmonic table \cite{jrhexitunes}.  In a similar manner to the ReacTogon, tiles or 'cell commands' are placed on a circular grid of hexagons and control the nature of the sound produced. It’s unique selling point is derived from the fact that it uses \textit{'artificial intelligence and advanced randomisation algorithms'} \cite{randomalg} to randomly alter the sound as the loop progresses to create a constantly changing sound. In addition to this, in place of a 'start' tile, sound is propagated from six 'oscillator' tiles at the centre of the grid and the playhead moves to one of three adjacent tiles. \cite{amidiomanual}
@@ -75,7 +75,7 @@ A key feature of the TonePad application is it's ability to import and export so
 \begin{center}
 \includegraphics[scale=0.5]{3.jpg}\
 \end{center}
-Developed in 2005 by Japanese artist Toshio Iwai and Yu Nishibori at Yamaha \cite{tenorionwiki}, the Tenori-On is a hand-held music sequencer. Fundamentally, it is conceptually similar to the TonePad, but in hardware form and with a variety of different modes. The hardware itself consists of a 16 x 16 matrix of pressable buttons which light when activated. These buttons can act in a similar manner to the cells in the TonePad in the main sequencing mode, where highlighted cells are played when the playhead encounters them.\\
+Developed in 2005 by Japanese artist Toshio Iwai and Yu Nishibori at Yamaha \cite{tenorionwiki}, the Tenori-On is a hand-held music sequencer. Fundamentally, it is conceptually similar to the TonePad, but in hardware form and with a variety of different modes. The hardware itself consists of a 16 x 16 matrix of pressable buttons which light when activated. These buttons can act in a similar manner to the cells in the TonePad in the main sequencing mode.\\
 \\
 In addition to this, five other modes exist such as 'push mode', which produces a continuous sound when a cell is pressed; 'bounce mode' which causes a the playhead to oscillate between the selected cell and the edge of the matrix, producing sound when 'bouncing' off the side and 'grouping' which is used to sequence patterns together.\\
 \\
@@ -111,7 +111,7 @@ In musical theory, an interval is the distance between two notes or pitches, the
 \end{itemize}
 This layout clusters complementary notes together, for example, all the notes in the C Major chord, namely C, E and G are adjoining. Scales are played by using simple, repeated patterns that can be transposed for playing in different keys. \\
 \\
-Transposition, \textit{the shifting of a melody, a harmonic progression or entire musical piece to another key, while maintaining the same tone structure} \cite{koch}, can be done far more easily on a harmonic keyboard than on a conventional keyboard as the basic pattern is always retained. This is shown in a comparison between the C and G major scale below:
+Transposition, 'the shifting of a melody, a harmonic progression or entire musical piece to another key, while maintaining the same tone structure' \cite{koch}, can be done far more easily on a harmonic keyboard than on a conventional keyboard as the basic pattern is always retained. This is shown in a comparison between the C and G major scale below:
 \pagebreak
 \begin{center}
 \includegraphics[scale=0.7]{scale.png}
@@ -121,26 +121,26 @@ Transposition, \textit{the shifting of a melody, a harmonic progression or entir
 \includegraphics[scale=0.7]{scale.png}
 \includegraphics[scale=1.5]{scale2.jpg}
 \end{center}
-Above is shown a comparison of the C major scale played on a harmonic table based keyboard (left) and on a conventional piano keyboard (right). The progression is enumerated from 1 to 8.\\
+Above is shown a comparison of the C major scale played on a harmonic table based keyboard (left) and on a conventional piano keyboard (right). The progression is enumerated from 1 to 8.
 
 \subsection{Technical Research}
 \subsubsection{MIDI}
-MIDI, short for Musical Instrument Digital Interface is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another \cite{swift}. A link in MIDI can handle 16 channels, routes of communication, to transmit information.\\
+MIDI (Musical Instrument Digital Interface) is a technical standard that describes a protocol, digital interface and connectors and allows a wide variety of electronic musical instruments, computers and other related devices to connect and communicate with one another \cite{swift}. A link in MIDI can handle 16 channels, routes of communication, to transmit information.\\
 \\
-MIDI uses messages containing instructions which controls a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters \cite{brewster}. Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
+MIDI uses messages containing instructions to control a device. A MIDI message consists of a status byte, which indicates the type of the message, followed by up to two data bytes that contain the parameters \cite{brewster}. Using MIDI can you send ‘channel messages’ which are heard only by the channel they are sent to, or ‘system messages’ which are heard by all devices on all channels.\\
 \\
 The main types of messages sent, in real time, over a single channel include \cite{Huber}:
 \begin{itemize}
-\item Note on messages: Specify a notes, volume (velocity), note, pitch and the channel it should be played on.
-\item Note off messages: Same of note on, but turns off a note.
+\item Note on messages: Specify a notes, volume, pitch and channel.
+\item Note off messages: Same as note on, but turns off a note.
 \item Control change messages: Changes instrument settings.
 \end{itemize}
-This research gave us a grounding in MIDI; learning that it was possible to set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change [instrument]” and “note-off” messages. These factors can help in emulating interesting features of existing products. One slight disappointment we found when researching MIDI was (at the time of the research) Android devices did not fully support MIDI \cite{midinope}. 
+This research gave us a grounding in MIDI; learning that it was possible to set each grid layer to be a channel, and each hexagon cell in the grid could send MIDI messages specifying “note-on”, with the note number, "velocity" "program" change [instrument]” and “note-off” messages. These factors can help in emulating interesting features of existing products. We also found, at the time of research, that Android devices did not fully support MIDI \cite{midinope}. 
 
 \subsubsection{Hash Maps}
-Hash maps are a data structure that use a hash function to generate unique keys for identifying values within a table. A key is made using a hash function that will index directly into the correct position, where the requested value will be found \cite{hashm}.\\
+Hash maps are data structures that use a hash function to generate unique keys for identifying values within a table. A key is made using a hash function that will index directly into the correct position, where the requested value will be found \cite{hashm}.\\
 \\
-The hash function will assign each possible key to a unique location. This property of hash maps ensures that no two pulses occupy the same space on the grid. Our method of collision resolution is to simply overwrite keys in the event of a collision. This removes the need for advanced collision resolution algorithms such as \textit{Separate chaining} or \textit{Open addressing}. As such, the access time of the hash map will always be constant: affording an access time of $ O(1) $ for insert, search and delete methods \cite{stein}. Of course we will need an array to keep track of the keys in use.\\
+The hash function will assign each possible key to a unique location. This property of hash maps ensures that no two pulses occupy the same space on the grid.
 \\
 To create the perfect hash function it is necessary to ensure there are no \textit{unwanted} collisions; collisions that occur with pulses in different locations on the grid. Some sort of hashing function in base 6 to take advantage of the senary properties of hexagons.\\
 
@@ -283,23 +283,22 @@ Our application is aimed to be used by a wide variety of people, with varying le
 \pagebreak
 \part{Design}
 \section{Software Design}
-We looked at the Reactogon and decided to expand upon it, please look at the functional requirements for this.
 \subsection{The Grids}
-Our software will comprise of 6 layers; each layer being a grid. Each grid would have to be unique yet have different properties; this was the first indication that the object-oriented paradigm was suitable for our codebase. Each grid would have a set of properties, these properties being:
+Our software will comprise of 6 layers of grids. Each grid will be unique yet have different properties; this was the first indication that the object-oriented paradigm was suitable for our codebase. Each grid would have a set of properties, these properties being:
 \begin{itemize}
 \item Each grid will be assigned a unique instrument, but needs to support changing dynamically, mid play. This suggested that a grid should be assigned its own channel in a MIDI sequencer \cite{rees}.
-\item Each grid can be dynamically transposed --- supporting different octaves, through the research we found that MIDI can play 127 different notes ranging from octaves 0 to 10 \cite{swift}. This suggests that each grid should have a starting note and some sort of algorithm then fills the grids with correct notes.\\
+\item Each grid can be dynamically transposed --- supporting different octaves. MIDI can play 127 different notes ranging from octaves 0 to 10 \cite{swift}. This suggests that each grid should have a starting note and an algorithm that fills the grids with correct notes.\\
 The tempo of the grid will be changeable, but all grids must have synchronisable tempos based on a global base tempo. Grids can then play at $ 1 \times , \frac{1}{2}, \frac{1}{4}, \frac{1}{8}$ or $\frac{1}{16} $ times the base pace, these values were chosen due to the research in music theory. This implies that a grid can be halted for set amount of time/tick.
 \end{itemize}
 
 \noindent
-The grid itself would be made up of hexagonal 'cells’, these should hold information about what note each cell is, this could simply be a number. From this it would be sensible to store the cells as a 2D array. As discussed abovlle this would then make it quite simple to transpose notes with an algorithm. Information about where it should be placed in the grid itself. Some of the properties of hexagons are outlined in the research and will help for placement and using hexagon properties to our advantage. Because this is quite a visual piece of software some information needs to be held about its state, as we wanted to show if a cell is active or not.
+The grid itself would be made up of hexagonal cells, these should hold information about what note each cell is, this could simply be a number. From this it would be sensible to store the cells as a 2D array. As discussed above this would then make it simple to transpose notes with an algorithm. Information about where it should be placed in the grid itself. Some of the properties of hexagons are outlined in the research and will aid in placement and using hexagon properties to our advantage. Because this is quite a visual piece of software, some information needs to be held about its state, as we wanted to show if a cell is active or not.
 
 \subsection{Creation of Sound}
-If 4 separate pulses hit 4 different tiles on the same ‘tick’, they all should be played at the exactly the same time, and all 6 grids must follow this rule. For this to happen, there needs to be some sort of queue, where all notes that should be played at a set point in time are grouped together, then sent off to be played all at once. This could happen multiple times per second, so it looks like some sort of thread will be needed to play multiple sequences at the same time and will not halt the program.
+If 4 separate pulses hit 4 different tiles on the same ‘tick’, they all should be played at the exactly the same time. For this to happen, there needs to be a queue, where all notes that should be played at a set point in time are grouped together, then sent to be played all at once. This could happen multiple times per second, so it looks like some sort of thread will be needed to play multiple sequences at the same time and will not halt the program.
 
 \subsection{Pulse}
-The vision of a pulse is some sort of object moving through the grid, from cell to cell. The pulse itself should be quite simple as all it must do is move from one cell to another. The tempo of the grid should manipulate how fast the pulse moves from one to another. The grid must be able to support multiple pulses, all moving in different directions at the same time. As well as this, pulses must not affect one and other, crossing/colliding pulses shouldn't be a problem and the software must be able to handle this. But the software must be able to handle pulses that occupy the same space, as not to create exponential loops see figure 1. When a pulse comes into contact with a tile it should affect the pulse in some way.
+The vision of a pulse is an object moves through the grid, from cell to cell. The pulse itself should be quite simple as all it must do is move from one cell to another. The tempo of the grid should manipulate how fast the pulse moves from one to another. The grid must be able to support multiple pulses, all moving in different directions at the same time. As well as this, pulses must not effect one and other, crossing/colliding pulses shouldn't be a problem and the software must be able to handle this. The software must be able to handle pulses that occupy the same space, as not to create exponential loops. When a pulse comes into contact with a tile it should effect the pulse in some way.
 \begin{center}
 \includegraphics[scale=0.4]{6.png}\\
 \textbf{fig. 1}
@@ -327,7 +326,7 @@ The whole system needs to produce music at a reliable, constant rhythm, therefor
 
 \pagebreak
 \section{User Interface Designs}
-The colour scheme of our software is grey-scale, with blue and orange highlights. This is comparable to the popular video game portal 2, and allows for easy differentials to be made between different functions of each tile, as well as allowing for an attractive overall look. The design of the tiles has been through several iterations as can be seen below:\\
+The colour scheme of our software is grey-scale, with blue and orange highlights. This is comparable to the popular video game Portal 2 \cite{portal2}, and allows for easy differentials to be made between different functions of each tile, as well as allowing for an attractive overall look. The design of the tiles has been through several iterations as can be seen below:\\
 \begin{center}
 \includegraphics[scale=0.3]{tileprogression.jpg}
 \end{center}
@@ -339,7 +338,7 @@ The changes in the logo design can be seen below, and illustrates a process of r
 \includegraphics[scale=0.5]{logoprogression.jpg}
 \end{center}
 
-The control section of the window changed over time, as we added new features to the project and developed the design theme and layout. The first version we put serious time into introduced the metallic theme to compliment the logo and tiles. There were a few issues with the chunkiness and curviness of some aspects and in order to improve beyond this, we decided upon a new look. We split the window into two halves; moved the tabs below the grid and introduced a more simplistic control panel look. These improvements were very well recieved, so the rest of the graphics were updated to match, yeilding our final design as can be seen below:\\
+The control section of the window changed over time, as we added new features to the project and developed the design theme and layout. The first version we put serious time into introduced the metallic theme to compliment the logo and tiles. There were a few issues with the chunkiness and curviness of some aspects and in order to improve beyond this, we decided upon a new look. We split the window into two halves; moved the tabs below the grid and introduced a more simplistic control panel look. Consequently, we updated the rest of the graphics to match, yeilding our final design as can be seen below:\\
 \begin{center}
 \includegraphics[scale=0.45]{logoprogression1.png}
 \end{center}
@@ -436,10 +435,10 @@ Removal of duplicates, ---figure 1--- in the design section shows a problem of p
 \\
 To solve this problem, a hash map was used to store the current location of every pulse in each grid. The hashing algorithm took the pulses current location and direction to generate a unique key to place it in the hash map. The hashing algorithm is shown below (equation 1). The hashing algorithm was relatively simple as, by virtue of using hexagons, it was possible to work in base 6. By doing this, if two pulses occupied the same space on the grid (going the same direction etc.) they would be placed in the same position in the hash map. This would cause a collision, but as a hash map only accepts unique values, the second value (and any after that) would simply write over the old value. See the Hash Maps section of Technical Research for more information.\\
 \\
-To keep track of the keys in the hash map there is an array list holding all keys currently in use. To access the pulses it was necessary to traverse through this list and use the keys to get data from the hash map. Every loop, the array list was emptied and all keys where added again. By using a hash map access time was reduced to $O(1)$ and removal was never a problem, as a hash map with no linear probing just writes over a value. It also meant there was no adding or removing of pulses from an array.\\
-\begin{equation}
-Key = ((Pulse.iLocation \times 36) + (Pulse.jLocation \times 6) + direction)
-\end{equation}
+To access the pulses it was necessary to traverse through an array list holding all keys currently in use. We used the keys to get data from the hash map. Every loop, the array list was emptied and all keys where added again. By using a hash map access time was reduced to $O(1)$ and removal was never a problem, as a hash map with no linear probing just writes over a value. It also meant there was no adding or removing of pulses from an array.\\
+\begin{verbatim}
+Key = ((Pulse.iLocation x 36) + (Pulse.jLocation x 6) + direction)
+\end{verbatim}
 
 \pagebreak
 \subsection{Timing and Tempo}
@@ -531,73 +530,27 @@ For example, code ‘System.out.println("Note ="+note); ‘ is added in method p
 \item  User interface level. Observe the results in the user interface level. For example, observe the image, the lights and sounds which the application actually produces. Compare these with the result that the users are expecting. If they are exactly the same, the test is passes which means it meets the requirement. Otherwise, the test is failed and debugging is needed to make the test pass. An example test is shown in the following section.
 \end{enumerate}
 
-\subsubsection{User Interface Testing Example}
-
-Functional requirement to test: Explode operator tile which can split a pulse into 5 different directions should be implemented.\\
-
-\textbf{Test steps:}
-\begin{enumerate}
-\item Click and place the blue ‘play’ tile in the first empty space within the grid.
-
-\item Click and place the blue ‘explode’ tile on the second empty space which is in the path of the first.
-
-\item Click the ‘start’ button.
-\end{enumerate}
-
-\textbf{Expected result in steps:}
-\begin{enumerate}
-\item Should display a grey 'play' tile on the first hexagonal tile.
-
-\item Should display a grey 'explode' tile on the second hexagonal tile.
-
-\item Should play a note and display blue light which represents the pulse from the first tile to the second tile. Then it should play a different note at the second tile and display blue lights from the second tile to all directions except the direction of input.
-\end{enumerate}
-
-\textbf{Actual result in steps:}
-\begin{enumerate}
-\item A grey “play” tile displays on the first hexagonal tile. Example output data: The node is (10,6)
-
-\item A grey “explode” tile displays on the second hexagonal tile. Example output data: The node is (10,3)
-
-\item The application plays a note and a blue light displays from the first tile to the second tile. Then the application plays a different note at the second tile and displays blue lights from the second tile to all directions except the direction of input.
-\end{enumerate}
-
-\noindent
-\textbf{Example output data:} \\
-\\
-\emph{ Note =67.  The direction is 0. \\ The node is (10,6).  Now the direction is 0. \\ The node is (10,5)}\\
-
-\noindent
-This output data is very long and the complete data is shown in the appendix. The actual results and the accepted ones are the same after comparing. Hence this test is passed. There are a substantial number of functional tests needed to make sure that the system operates as required. The detailed test cases are provided in the appendix. 
+\subsubsection{User Interface Testing}
+See appendix for user interface testing example.
 
 \subsection{Performance Testing}
-Performance tests are run to check whether the program meets the nonfunctional requirements. We decided to cover three types of performance tests which are stress, compatibility and usability tests. 
+Performance tests are run to check whether the program meets the nonfunctional requirements. We decided to cover three types of performance tests which are stress, compatibility and usability tests.
+
 \subsubsection{Stress Testing}
-This test is to ensure the software does not crash through creating conditions of insufficient computational resources such as low memory or lack of disk space.\\
-\\
-The CPU usage rate is used in this test, although this may not be very accurate for the reason that the CPU usage rate is always changing in a small range.\\
-\pagebreak
-System Spec:
-\begin{itemize}
-\item Intel\textregistered Core\texttrademark i5-2450M CPU @ 2.5GHz (4 CPUs)
-\item 6GB DDR3 RAM
-\item Windows 7 Home Premium x64
-\end{itemize}
-\textbf{Test:} \\
-Before running the application, the CPU usage rate is 0-1\%. When opening the application it rises to 38\% at most and stabilized around 8\%. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7\% to 12\%. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 6\%. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
+See appendix for stress testing example.
 
 \subsubsection{Compatability Testing}
-The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of computers. It is done to check if our application can run on different configurations of hardware. The application is tested to run on standard windows laptop; a low end Atom netbook, computers in school lab and library computer. It can run successfully on all. Other tests have been run on various GNU plus Linux distributions and have all been successful. Therefore it can be concluded that the application does run on Windows 7 and the sampled Linux distributions.\\
+The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of hardware configurations. The application successfully ran on, in tests, a high end laptop; a low end Atom netbook and on various GNU plus Linux distributions including Arch Linux and Ubuntu .\\
 
 \subsubsection{Usability Testing}
-Usability testing, which is also called human factors testing, is based on the non-functional requirement that the application should be easy to use. It is concerned mainly with the use of the application.\\
+Usability testing, or human factors testing, is based on the non-functional requirement that the application should be easy to use.\\
 \\
 The test is divided into two aspects. The first is to test the efficiency of using the application, calculate the time and the steps to complete basic tasks such as load a hex file, save a hex file and stop a beat. The application can respond immediately to complete tasks. And the steps are designed to be minimized. The application takes around half a second to open (this time may be longer on other systems). When using the application, as an example use case, playing a note through operator tiles, the basic steps are clicking the operator tile you want to add, clicking on the place on the grid and finally clicking the “start” button. This only costs several seconds.\\
 \\
 The second aspect is to test the emotional response. It is to check if the user interface is easy to use and understand. Our application contains a clear background, clear layout and meaningful images for the control buttons. There are few words on the board to make things simpler. When the user does not know the meaning of the icons, the help menu can be used. In addition, the users may make mistakes and the edit buttons ‘undo’ and ‘redo’ can be useful. Furthermore, keyboard shortcuts are enabled to enhance usability. The customer's feelings are asked in the acceptence test. 
 
 \subsubsection{Acceptance Testing}
-The acceptance tests are conducted and evaluated by users. We asked some other people to use our application, ask them to check if our application meets their needs through answering our Hex Evaluation Survey. No matter what the users’ music competency is, they find it is easy to learn to use our application. Most people are highly complimentary of our application’s user interface and layout design. The users think that our application is user friendly and some even said it is ‘impressive stuff’\cite{edgeorge}. The users find that our application responds quickly and has excellent features. Most people think that the application remains fun when having used it and they are happy to recommend it to their friends. However, they also gave us some useful suggestions to improve our application. For example, some want us to add the name of the note and chord playing. Some want us to make the ‘undo’ button able to undo everything immediately after clearing the whole grid. Beyond that, some others want us to add ‘full screen’ functionality. Others want us to add an editing menu when a tile is right clicked. Based on the useful suggestions of stakeholders, we made a list of the features to add during potential future development, which is shown below.
+The acceptance tests are conducted and evaluated by users. We asked some other people to use our application, ask them to check if our application meets their needs through answering our Hex Evaluation Survey. No matter what the users' music competency is, they find it is easy to learn to use our application. Most people are highly complimentary of our application's user interface and layout design. The users think that our application is user friendly and some even said it is ‘impressive stuff’\cite{edgeorge}. The users find that our application responds quickly and has excellent features. Most people think that the application remains fun when having used it and they are happy to recommend it to their friends. However, they also gave us some useful suggestions to improve our application. For example, some want us to add the name of the note and chord playing. Some want us to make the ‘undo’ button able to undo everything immediately after clearing the whole grid. Beyond that, some others want us to add ‘full screen’ functionality. Others want us to add an editing menu when a tile is right clicked. Based on the useful suggestions of stakeholders, we made a list of the features to add during potential future development, which is shown below.
 
 \begin{enumerate}
 \item We will add a ‘full screen’ button.
@@ -670,8 +623,62 @@ It is our conviction that we have produced a project of a high quality and high 
 \pagebreak
 
 \part{Appendix}
+\section{Additional Testing}
+\subsubsection{User Interface Testing Example}
+
+Functional requirement to test: Explode operator tile which can split a pulse into 5 different directions should be implemented.\\
+
+\textbf{Test steps:}
+\begin{enumerate}
+\item Click and place the blue ‘play’ tile in the first empty space within the grid.
+
+\item Click and place the blue ‘explode’ tile on the second empty space which is in the path of the first.
+
+\item Click the ‘start’ button.
+\end{enumerate}
+
+\textbf{Expected result in steps:}
+\begin{enumerate}
+\item Should display a grey 'play' tile on the first hexagonal tile.
+
+\item Should display a grey 'explode' tile on the second hexagonal tile.
+
+\item Should play a note and display blue light which represents the pulse from the first tile to the second tile. Then it should play a different note at the second tile and display blue lights from the second tile to all directions except the direction of input.
+\end{enumerate}
+
+\textbf{Actual result in steps:}
+\begin{enumerate}
+\item A grey “play” tile displays on the first hexagonal tile. Example output data: The node is (10,6)
+
+\item A grey “explode” tile displays on the second hexagonal tile. Example output data: The node is (10,3)
+
+\item The application plays a note and a blue light displays from the first tile to the second tile. Then the application plays a different note at the second tile and displays blue lights from the second tile to all directions except the direction of input.
+\end{enumerate}
+
+\noindent
+\textbf{Example output data:} \\
+\\
+\emph{ Note =67.  The direction is 0. \\ The node is (10,6).  Now the direction is 0. \\ The node is (10,5)}\\
+
+\noindent
+This output data is very long and the complete data is shown in the appendix. The actual results and the accepted ones are the same after comparing. Hence this test is passed. There are a substantial number of functional tests needed to make sure that the system operates as required. 
+
+subsubsection{Stress Testing}
+This test is to ensure the software does not crash through creating conditions of insufficient computational resources such as low memory or lack of disk space.\\
+\\
+The CPU usage rate is used in this test, although this may not be very accurate for the reason that the CPU usage rate is always changing in a small range.\\
+\pagebreak
+System Spec:
+\begin{itemize}
+\item Intel\textregistered Core\texttrademark i5-2450M CPU @ 2.5GHz (4 CPUs)
+\item 6GB DDR3 RAM
+\item Windows 7 Home Premium x64
+\end{itemize}
+\textbf{Test:} \\
+Before running the application, the CPU usage rate is 0-1\%. When opening the application it rose to 38\% at most and stabilized around 8\%. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7\% to 12\%. There is no obvious changes when we increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 6\%. Hence, our application's CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
+
 \section{Market Research Surveys}
-To be insterted.
+\includepdf[pages=1-2]{survey.pdf}
 \pagebreak
 
 \section{Software Instruction Manual}
