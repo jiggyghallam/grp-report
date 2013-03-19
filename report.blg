@@ -7,6 +7,11 @@ You're missing a field part---line 8 of file reportReferences.bib
  :    year = 
  :           ,
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 123 of file reportReferences.bib
+ :  
+ :  year = "2013"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -64,52 +69,56 @@ Warning--empty author in gdmath
 Warning--empty title in gdmath
 Warning--empty journal in gdmath
 Warning--empty year in gdmath
+Warning--empty title in rees
+Warning--empty journal in rees
 Warning--empty journal in SEP
+Warning--empty journal in edgeorge
+Warning--empty year in edgeorge
 Warning--empty author in kb
 Warning--empty title in kb
 Warning--empty journal in kb
 Warning--empty year in kb
 
 Done.
-You've used 20 entries,
+You've used 22 entries,
             4039 wiz_defined-function locations,
-            871 strings with 8728 characters,
-and the built_in function-call counts, 5293 in all, are:
-= -- 289
-> -- 41
+            877 strings with 8827 characters,
+and the built_in function-call counts, 5879 in all, are:
+= -- 328
+> -- 49
 < -- 0
-+ -- 27
-- -- 7
-* -- 339
-:= -- 955
-add.period$ -- 26
-call.type$ -- 20
-change.case$ -- 6
++ -- 31
+- -- 9
+* -- 365
+:= -- 1069
+add.period$ -- 29
+call.type$ -- 22
+change.case$ -- 7
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 518
-empty$ -- 556
-format.name$ -- 7
-if$ -- 1020
+cite$ -- 85
+duplicate$ -- 574
+empty$ -- 614
+format.name$ -- 9
+if$ -- 1137
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 87
-newline$ -- 113
-num.names$ -- 7
-pop$ -- 337
+int.to.str$ -- 22
+missing$ -- 97
+newline$ -- 121
+num.names$ -- 9
+pop$ -- 370
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 377
+skip$ -- 422
 stack$ -- 0
-substring$ -- 6
-swap$ -- 172
+substring$ -- 7
+swap$ -- 194
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 20
-warning$ -- 59
-while$ -- 7
-width$ -- 22
-write$ -- 168
-(There was 1 error message)
+type$ -- 22
+warning$ -- 63
+while$ -- 9
+width$ -- 24
+write$ -- 183
+(There were 2 error messages)

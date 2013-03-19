@@ -118,8 +118,17 @@ C.~Stein, ``Introduction to algorithms,'' 2001.
   \url{http://www.gdreflections.com/2011/02/hexagonal-grid-math.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{rees}
+\BIBentryALTinterwordspacing
+P.~Rees, 2001. [Online]. Available:
+  \url{http://www.philrees.co.uk/articles/midimode.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{SEP}
 J.~M.~A. S.~L.~Pfleeger, ``Software engineering 4th edition,'' 2010.
+
+\bibitem{edgeorge}
+E.~George, ``Ceo. ed george designs.''
 
 \bibitem{kb}
 \BIBentryALTinterwordspacing

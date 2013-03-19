@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {4.5}Keeping Time}{13}
 \contentsline {section}{\numberline {5}User Interface Designs}{14}
 \contentsline {part}{III\hspace {1em}Implementation}{18}
-\contentsline {section}{\numberline {6}Code Plan}{19}
+\contentsline {section}{\numberline {6}Source Code Hierarchy}{19}
 \contentsline {section}{\numberline {7}Central Control Algorithm}{20}
 \contentsline {section}{\numberline {8}Key Control Elements, Data Structures and Methods}{20}
 \contentsline {subsection}{\numberline {8.1}Removal of Duplicates}{20}
@@ -46,13 +46,15 @@
 \contentsline {subsubsection}{\numberline {9.3.2}Compatability Testing}{26}
 \contentsline {subsubsection}{\numberline {9.3.3}Usability Testing}{26}
 \contentsline {subsubsection}{\numberline {9.3.4}Acceptance Testing}{26}
-\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{27}
-\contentsline {section}{\numberline {10}Updates since Interim Report}{27}
-\contentsline {section}{\numberline {11}Time and Planning}{27}
-\contentsline {section}{\numberline {12}Problems Encountered}{30}
-\contentsline {part}{V\hspace {1em}Conclusion}{31}
-\contentsline {section}{\numberline {13}References}{31}
-\contentsline {part}{VI\hspace {1em}Appendices}{32}
-\contentsline {section}{\numberline {14}Markey Research Survey}{32}
-\contentsline {section}{\numberline {15}Software Instruction Manual}{33}
-\contentsline {section}{\numberline {16}Weekly Formal Meeting Minutes}{34}
+\contentsline {part}{IV\hspace {1em}Project Meta-Comment}{28}
+\contentsline {section}{\numberline {10}Updates since Interim Report}{28}
+\contentsline {section}{\numberline {11}Time and Planning}{28}
+\contentsline {section}{\numberline {12}Problems Encountered}{31}
+\contentsline {part}{V\hspace {1em}Conclusion}{33}
+\contentsline {section}{\numberline {13}Project Evaluation}{33}
+\contentsline {section}{\numberline {14}Conclusion}{33}
+\contentsline {part}{VI\hspace {1em}References}{34}
+\contentsline {part}{VII\hspace {1em}Appendix}{35}
+\contentsline {section}{\numberline {15}Market Research Surveys}{35}
+\contentsline {section}{\numberline {16}Software Instruction Manual}{36}
+\contentsline {section}{\numberline {17}Weekly Formal Meeting Minutes}{37}

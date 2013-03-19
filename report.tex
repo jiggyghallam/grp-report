@@ -1,6 +1,7 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{pdfpages}
 \usepackage[margin=1in]{geometry}
 
 \catcode`\_=\active
@@ -96,7 +97,7 @@ In addition to this, particularly interesting features of researched products th
 
 \pagebreak
 \subsection{Market Research}
-We conducted a survey (attached in appendices) targeting general music enthusiasts as well as complete beginners in the music field to find out whether our software would be desirable. Very few of the people we asked had heard of the ReacTogon, the concept instrument, but most had some sort of interactive music experience where you would either use a mouse for a desktop application or a touch screen app to create some sort of music. We received contrasting opinions on the pre-existing systems, some of them liked the idea of the program being a portable touch screen app so they can continue working on their music on the go but they also pointed out that some of the features were not as advanced as the desktop applications. The desktop applications that were reviewed were not targeted at beginner users as some of the features were too complicated and functionality was not as easy as the touch screen applications. The suggestion of a desktop application with touch screen capabilities was received well. Most said they would be interested in using a program which combined the desirable features of both a touch screen and desktop applications.
+We conducted a survey (see appendix) targeting general music enthusiasts as well as complete beginners in the music field to find out whether our software would be desirable. Very few of the people we asked had heard of the ReacTogon, the concept instrument, but most had some sort of interactive music experience using either a desktop application using a mouse or a touch screen application. We received contrasting opinions on the pre-existing systems, some of them liked the idea of the program being a portable touch screen app so they can continue working on their music on the go but they also pointed out that some of the features were not as advanced as the desktop applications. The desktop applications that were reviewed were not targeted at beginner users as some of the features were too complicated and functionality was not as easy as the touch screen apps. The suggestion of a desktop application with touch screen capabilities was received well as it combined the desirable features of both a touch screen app and a desktop application. 
  
 \subsection{Music Research}
 \begin{center}
@@ -388,7 +389,7 @@ Below is a description of the various features of our software's layout as label
 \end{enumerate}
 
 \part{Implementation}
-\section{Code Plan}
+\section{Source Code Hierarchy}
 \begin{center}
 \includegraphics[scale=0.6, angle=270]{plan.png}
 \end{center}
@@ -583,20 +584,37 @@ System Spec:
 \item Windows 7 Home Premium x64
 \end{itemize}
 \textbf{Test:} \\
-Before running the application, the CPU usage rate is 0-1\%. When opening the application it rises to 38\% at most and stabilized around 8\%. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7\% to 12\%. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 5.7. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
+Before running the application, the CPU usage rate is 0-1\%. When opening the application it rises to 38\% at most and stabilized around 8\%. When put the operator tiles on the grid and start to play note, the CPU usage rate is around 7\% to 12\%. There is no obvious changes when increase the number of tiles on the grid. When use more grids to play note concurrently, the CPU usage rate increase to around 22 at most and stabilized around 9. The average CPU utilization rate of the application is around 6\%. Hence, our application’s CPU usage is not very high and it is not easy to crash even in conditions of insufficient computational resources. 
 
 \subsubsection{Compatability Testing}
-The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of computers. It is done to check if our application can run on different configurations of hardware. The application is tested to run on my laptop at home, my classmate’s computer, computers in school lab and library computer. It can run successfully on all. Other tests have been run on various GNU plus Linux distributions and have all been successful. Therefore it can be concluded that the application does run on Windows 7 and the sampled linux distributions.\\
+The compatibility testing is based on the non-functional requirement that the application should run comfortably on a wide range of computers. It is done to check if our application can run on different configurations of hardware. The application is tested to run on standard windows laptop; a low end Atom netbook, computers in school lab and library computer. It can run successfully on all. Other tests have been run on various GNU plus Linux distributions and have all been successful. Therefore it can be concluded that the application does run on Windows 7 and the sampled Linux distributions.\\
 
 \subsubsection{Usability Testing}
 Usability testing, which is also called human factors testing, is based on the non-functional requirement that the application should be easy to use. It is concerned mainly with the use of the application.\\
 \\
-The test is divided into two aspects. The first one is to test the efficiency of using the application, calculate the time and the steps to complete basic tasks such as load a hex file, save a hex file and stop a beat. The application can respond immediately to complete tasks. And the steps are designed to be minimized. When start runs the application, the time to create layout is 505.0 ms(in some computers, the time may be longer).When using the application, for example, to play note through operator tiles, the basic steps are clicking the operator tile you want to add, clicking on the place on the grid and finally clicking the “start” button. And it only cost several seconds.\\
+The test is divided into two aspects. The first is to test the efficiency of using the application, calculate the time and the steps to complete basic tasks such as load a hex file, save a hex file and stop a beat. The application can respond immediately to complete tasks. And the steps are designed to be minimized. The application takes around half a second to open (this time may be longer on other systems). When using the application, as an example use case, playing a note through operator tiles, the basic steps are clicking the operator tile you want to add, clicking on the place on the grid and finally clicking the “start” button. This only costs several seconds.\\
 \\
-The second one is to test the emotional response. It is to check if the user interface is easy to use and understand. Our application contains a clear background, clear layout and meaningful images for the control buttons. There are few words on the board to make things simpler. When the user does not know the meaning of the icons, the help menu can be used. In addition, the users may make mistakes and the edit button ‘undo’, ‘redo’ can be useful. Furthermore, Keyboard Shortcuts are enable to make sure the ease of use. The customers’ feelings are asked in the acceptable test. 
+The second aspect is to test the emotional response. It is to check if the user interface is easy to use and understand. Our application contains a clear background, clear layout and meaningful images for the control buttons. There are few words on the board to make things simpler. When the user does not know the meaning of the icons, the help menu can be used. In addition, the users may make mistakes and the edit buttons ‘undo’ and ‘redo’ can be useful. Furthermore, keyboard shortcuts are enabled to enhance usability. The customer's feelings are asked in the acceptence test. 
 
 \subsubsection{Acceptance Testing}
-The acceptable tests are conducted, evaluated by users. So we ask some other people to use our application, ask them to check if our application can meet their needs. This can also test the installation of the software when we run the software on the other computers. This is an ongoing test with each release of our software.
+The acceptance tests are conducted and evaluated by users. We asked some other people to use our application, ask them to check if our application meets their needs through answering our Hex Evaluation Survey. No matter what the users’ music competency is, they find it is easy to learn to use our application. Most people are highly complimentary of our application’s user interface and layout design. The users think that our application is user friendly and some even said it is ‘impressive stuff’\cite{edgeorge}. The users find that our application responds quickly and has excellent features. Most people think that the application remains fun when having used it and they are happy to recommend it to their friends. However, they also gave us some useful suggestions to improve our application. For example, some want us to add the name of the note and chord playing. Some want us to make the ‘undo’ button able to undo everything immediately after clearing the whole grid. Beyond that, some others want us to add ‘full screen’ functionality. Others want us to add an editing menu when a tile is right clicked. Based on the useful suggestions of stakeholders, we made a list of the features to add during potential future development, which is shown below.
+
+\begin{enumerate}
+\item We will add a ‘full screen’ button.
+
+\item We would like to create an instruction video to help users learn to use our application easier.
+
+\item We will make an alphabetical order for instruments.
+
+\item We will make ‘undo’ able to recover all the tiles on the grid immediately after clicking the ‘clear’ button.
+
+\item We will make the operator tiles able to be added continuously when clicking the operator tile just once.
+
+\item We also would like to make the ‘delete’ button disabled automatically when clicking on another operator tile.
+\end{enumerate}
+
+The stakeholders also provided some suggestions we disagreed with and consequently will not implement. For example, some prefer ‘click and drag', but our application can be also used on touch screen computers which is better to ‘click and place’.\\
+\\
 \pagebreak
 
 \part{Project Meta-Comment}
@@ -608,43 +626,51 @@ In terms of changes to functionality of the software, since the interim report w
 The code has also been vastly improved in terms of efficiency, having completely rewritten the sound sequencer, decreasing memory usage and required CPU time.\\
 \\
 Overall, in terms of improvements and updates, we have attempted to turn what was effectively a prototype into a finished, complete product.\\
+
 \section{Time and Planning}
-At the start of the project we immediately contacted each other via email to meet in order to organise meeting times and to assign roles within the project to each team member. After comparing each other's timetables we agreed to meet 4 times in a week; one 30 minute formal meeting with our supervisor, one 1 hour informal meeting at the beginning of each week to separate tasks for that week and review tasks completed the previous weeks, a 4 hour group working session and a quick 20 minute meeting before our formal meeting with our supervisor. We also agreed early on that the best way to monitor our progress and organise our time would be to create a Gantt chart (See below). \\
+At the start of the project we immediately contacted each other via email to meet in order to organise meeting times and to assign roles within the project to each team member. After comparing each other’s timetables we agreed to meet 4 times in a week; one 30 minute formal meeting with our supervisor, one 1 hour informal meeting at the beginning of each week to separate tasks for that week and review tasks completed the previous weeks, a 4 hour group working session and a quick 20 minute meeting before our formal meeting with our supervisor. We agreed the best way to monitor our progress and organise our time for the project as a whole would be to create a Gantt chart.  \\
 \\
 \includegraphics[scale=0.7, angle=270]{gantt.png}
 \pagebreak
 \\
-The first thing we needed to do was create work breakdown structure so we separated tasks into different topics and then created sub-topics for each. Using deadline dates as guidance we made a rough estimate of how long each task will take then broke that down further for each sub topic and finally determined the order of the tasks. There is also a percentage complete column inserted, which was updated regularly so we can view progress on that particular section. We can also see if we are on track to complete each section. Using the Gantt chart we could view the critical path of the project as a whole. Critical path analysis shows an overview of the time-scale of the project - showing us if we are on track to complete the project on time. The critical path allows for slack time, so if a task is taking longer than necessary then it can be compensated as tasks overlap and eventually the critical path is not affected. For each subtopic, tasks were created and placed onto an online Kanban board.\\
+We had to first make a work breakdown structure so we separated tasks into different topics and then created sub-topics for each. Using deadline dates as guidance we made a rough estimate of how long each task will take then broke that down further for each sub topic and finally determined the order of the tasks. There is also a percentage complete column inserted, which was updated regularly so we can view progress on that particular section. We can also see if we are on track to complete each section. For each subtopic, tasks were created and placed onto a Kanban board.\\
 \\
 \begin{center}
 \includegraphics[scale=0.3]{kb.png}
 \textbf{KanBanFlow Main Board}
 \end{center}
-In our 1 hour informal meetings we were all assigned tasks for that week; these tasks were placed on a Kanban board using \cite{kb}. A Kanban board is an electronic board, which contains all the tasks in the product backlog (tasks that need to be completed); each task is separated into different columns, tasks that need to be done, tasks being analysed, tasks in development, tasks being tested or awaiting feedback and finally tasks completed. Each task has a name and description, each type of task is colour coded to correspond to a topic in the Gantt chart and also is an effective way of differentiating between the types of tasks. A team member is assigned to each task and a time estimate is made, when a task is completed the team member responsible fills in the time it took them to complete it. While a task is being done each member can show their progress by moving their task to the appropriate column. Each task has a due date and as it is an interactive board, it sends reminders to your email to tell you a task is due soon. The Kanban board was a very effective way of assigning tasks to each other and also a brilliant overview of the immediate tasks that needed to be completed. By using the Kanban board we were able to create a pert chart using the tasks.\\
+In our 1 hour informal meetings we were all assigned tasks for that week; these tasks were placed on a Kanban board \cite{kb}. A Kanban board is an electronic board, which contains all the tasks in the product backlog (tasks that need to be completed); each task is separated into different columns, tasks that need to be done, analysed, in development, being tested/awaiting feedback and finally completed. Each task has a name and description, each type of task is colour coded to correspond to a topic in the Gantt chart and also to differentiate the tasks. A team member is assigned to each task and a time estimate is made, when it is completed the team member responsible fills in the time it took them to complete it. While a task is being done each member can show their progress by moving it to the appropriate column. Each task has a due date and as it is an interactive board, it sends reminders to your email to tell you it is due soon. The Kanban board was a very effective way of managing our time and also a concise overview of the immediate tasks that needed to be completed. By using the Kanban board we were able to create a pert chart. \\
 \\
- A pert chart is similar to a Gantt chart but for a shorter timescale and each task in it is more detailed and specific. By using the tasks on the kanban board, we created a weekly Pert Chart to ensure the weekly tasks were completed and if any task is taking longer than usual then we were able to compensate as a critical path was determined first. As tasks weren’t completed sequentially but in parallel we could allow for slack time as well. Below is a example of the weekly charts we created.\\
+ A pert chart is similar to a Gantt chart but for a shorter timescale and each task in it is more detailed and specific. By using the assignments listed on the kanban board, we created a weekly Pert Chart to ensure work for that week was completed. If any task was taking longer than usual we were then able to compensate as a critical path was determined first. As tasks weren’t completed sequentially but in parallel we could allow for slack time as well. Below is a example of the weekly charts we created.\\
 \\
 \includegraphics[scale=0.5]{pert.png}\\
+We used the jobs assigned at the beginning of the week to find the critical path. The critical path was monitored closely to ensure successful completion of tasks that week. We did this by keeping in contact daily via Facebook, mobile or during our weekly group work session. Also during our Monday meetings we reviewed both the pert chart and Kanban boards and checked if we had successfully completed our assigned tasks for that week after this we updated our Gantt chart to view the overall progress of the project and check if we were on schedule to meet deadlines. All submissions of work was done via SVN (version control system) or initially on Facebook then uploaded to SVN directly after. The use of SVN in our project was very advantageous as it allows the group to not only access the code remotely but it also maintains a history of all the changes. Another feature is that it keeps log of who committed work along with a commit message from the user. \\
 \\
-We used the tasks that were created at the beginning of the week. The critical path was then identified. The tasks that were on the critical path had to be monitored closely to ensure the successful completion of tasks that week, we did this by keeping in contact daily via Facebook or email or during our weekly group work session. Also during our Monday meetings we reviewed both the pert chart and Kanban boards and checked if we had successfully completed our assigned tasks for that week after this we updated our Gantt to view the overall progress of the project and check if we were on schedule to meet deadlines.\\
-
-
 \section{Problems Encountered}
-Fear of conflict remains to be a constant problem in group working and in our team it was apparent in the early stages of the project. As we were working with each other for the first time nobody wanted to offend each other so opinions on certain matters weren’t challenged and constructive criticism was taken in the wrong way which in turn affected the quality of our initial work. Fear of conflict led to the avoidance of accountability this was because at times the team would refuse to confront difficult issues within the project by avoiding responsibility with the issue at hand and just focus on their given roles. These issues were eradicated with time as the more we worked together the better understanding we had of each other so we were regularly able to provide each other feedback with tasks and also raise any issues if we had any and admit responsibility to some issues . This led to the team being more productive as the focus was working together to produce a high standard of work instead of everyone for their own.\\
+Fear of conflict remains a constant problem in group working and in our team it was apparent in the early stages of the project. As we were working with each other for the first time nobody wanted to offend each other so opinions on certain matters weren’t challenged and constructive criticism was taken in the wrong way which in turn affected the quality of our initial work. Fear of conflict led to the avoidance of accountability this was because at times the team would refuse to confront difficult issues within the project by avoiding responsibility with the issue at hand and just focus on their given roles. These issues were eradicated with time as the more we worked together the better understanding we had of each other so we were regularly able to provide each other feedback with tasks and also raise any issues if we had any and admit responsibility to some issues . This led to the team being more productive as the focus was working together to produce a high standard of work instead of everyone for their own. \\
 \\
-Working in a team meant that competency levels within the team differed. For example none of the team had considerable experience in testing. As a result some team members were asked to learn more about J-unit testing and begin writing test cases. Our lack of experience was evident as we weren’t sure which parts of the program needed testing, therefore we didn’t have sufficient test cases for our initial prototypes. This made it difficult for our developer’s to see which part of the code had bugs and needed changes, but after advice from our supervisor and increased proficiency in testing our latest prototype had sufficient test cases. Another issue with different competency levels was that some of the team were working considerably more than others, this was apparent when we were assigning tasks at the beginning of the week, lack of commitment was evident as some would avoid taking responsibility for the harder tasks and just take the smaller ones or even take responsibility for the tasks and not produce their work within the given time. By organising a group working session we were able to help each other stick to task deadlines and motivate each other.\\ 
+Working in a team meant that competency levels within the team differed. For example none of the team had considerable experience in testing. As a result some team members were asked to learn more about JUnit testing and begin writing test cases. Our lack of experience was evident as we were not sure which parts of the program needed testing, therefore we did not have sufficient test cases for our initial prototypes. This made it difficult for our developer’s to see which part of the code had bugs and needed changes, but after advice from our supervisor and increased proficiency in testing our latest prototype had sufficient test cases. Another issue with different competency levels was that some of the team were working considerably more than others, this was apparent when we were assigning tasks at the beginning of the week, lack of commitment was evident as some would avoid taking responsibility for the harder tasks and just take the smaller ones or even take responsibility for the tasks and not produce their work within the given time. By organising a group working session we were able to help each other stick to task deadlines and motivate each other.\\ 
 \\
+Gaining full attendance at meetings was an issue. This meant assignment of tasks and our weekly feedback session were not as productive because someone would be missing. This led to some tasks being assigned to other group members to compensate. In order to avoid this nuisance, minutes were written up and uploaded to both Facebook and SVN straight after our formal meeting and also weekly tasks were uploaded to the Kanban board straight after they were assigned. \\
+
+\pagebreak
 \part{Conclusion}
-It is our conviction that we have produced a project of a high quality and high standard. \textit{'HEX'} conforms to, fulfills and arguably exceeds the specification drawn up at the beginning of the project. Not only have we succesfully emulated the reacTogon hardware, but we have also extended it: affording a truly novel musical experience. The success of the software not only lies in the unique, neoteric functionality and experience; but also in the usability and contemporary design of the user interface. These factors coupled with the quality of the codebase, which employs Java best practice and object-oriented design yields a culmination of our efforts and an ultimately successful project.
-\section{References}
+\section{Project Evaluation}
+Given additional time to expand the project, the codebase could be simplified through using inheritence and rewriting the main control algorithm. We also could have spent more time working as a group at the beginning of the project, as we found this to be advantageous during the closing months. We may have also benifited from having the more thorough set of functional requirements we drew up later in the project. This would have afforded more focussed, efficient work. This coupled with a more disciplined use of the KanBan board would have vastly improved our time planning.
+
+Despite this, overall our project has been a success. Our software met all of the later set of functional requirements as well as the original specification set out by our supervisor. This is evidenced within the functional and acceptance testing we carried out. Starting development early allowed for constant iterative improvement, creating a robust codebase.
+
+\section{Conclusion}
+It is our conviction that we have produced a project of a high quality and high standard. \textit{'HEX'} conforms to, fulfills and arguably exceeds the specification drawn up at the beginning of the project. Not only have we succesfully emulated the reacTogon hardware, but we have also extended it, thus affording a truly novel musical experience. The success of the software not only lies in the unique, neoteric functionality and experience; but also in the usability and contemporary design of the user interface. These factors coupled with the quality of the codebase, which employs Java best practice and object-oriented design yields a culmination of our efforts and an ultimately successful project.
+
+\pagebreak
+\part{References}
 \bibliographystyle{IEEEtran}
 \bibliography{reportReferences}
 \pagebreak
 
-\part{Appendices}
-
-
-\section{Markey Research Survey}
+\part{Appendix}
+\section{Market Research Surveys}
 To be insterted.
 \pagebreak
 
